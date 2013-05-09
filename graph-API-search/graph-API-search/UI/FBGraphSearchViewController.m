@@ -43,9 +43,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setupTableView
+#pragma mark - Table View Delegate Methods
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self setupTableViewWithStyle:UITableViewStyleGrouped];
+    CGFloat height = 45;
+    
+    return height;
 }
 
 @end
