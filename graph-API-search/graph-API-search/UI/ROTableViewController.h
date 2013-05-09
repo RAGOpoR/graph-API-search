@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class ROTableViewDataSource;
 @interface ROTableViewController : UIViewController <UITableViewDelegate> {
     UITableView *_tableView;
+    ROTableViewDataSource *_dataSource;
 }
 
 @property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) ROTableViewDataSource *dataSource;
 
+- (void)setupTableViewWithStyle:(UITableViewStyle)style;
 @end
