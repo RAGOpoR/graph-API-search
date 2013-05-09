@@ -8,6 +8,17 @@
 
 #import "AFHTTPClient.h"
 
+typedef enum {
+    StatusOK                               =   0,
+    StatusLocationServicesError            =   1,
+    StatusReachabilityError                =   2,
+    StatusNoResultsError                   =   3,
+    StatusUnknownError                     =   4,
+    StatusUnknownUser                      =   5,
+    
+} ConnectionStatus;
+
+
 @protocol ZodioAPIClientDelegate <NSObject>
 
 @required
@@ -31,4 +42,5 @@
 
 + (ZodioAPIClient *)sharedClient;
 + (NSMutableDictionary *)connectionTable;
+- (void)facebookGraphSearchForKeyword:(NSString *)keyword withPage:(NSInteger)page andLimit:(NSInteger)limit forOwner:(id<ZodioAPIClientDelegate>)owner;
 @end
