@@ -8,14 +8,13 @@
 
 #import "FacebookResultCellFactory.h"
 #import "FacebookResultCell.h"
-
+#import "ROObject.h"
 #define kfacebookCellHeight 50
 
 @implementation FacebookResultCellFactory
 
-+ (FacebookResultCell *)createfacebookCellWithCell:(FacebookResultCell *)cell feedItem:(id)currentFeedItem {
-    
-    
++ (FacebookResultCell *)createfacebookCellWithCell:(FacebookResultCell *)cell feedItem:(ROObject*)currentItem {
+    [cell setText:currentItem.message];
     cell.layer.borderColor = [UIColor redColor].CGColor;
     cell.layer.borderWidth = 1.0f;
 
@@ -25,7 +24,7 @@
     return cell;
 }
 
-+ (CGFloat)calculateHeightForFacebookCellWithData:(id)currentFeedItem {
++ (CGFloat)calculateHeightForFacebookCellWithData:(ROObject*)currentItem {
     return kfacebookCellHeight;
 }
 

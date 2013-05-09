@@ -34,19 +34,19 @@
     if (self = [super init]) {
         if ([[jsonData stringForKey:@"id"] length] > 0)
         {
-            self.objectID = [jsonData stringForKey:@"id"];
+            self.objectID = [jsonData valueForKey:@"id"];
         }
         if ([[jsonData stringForKey:@"icon"] length] > 0)
         {
-            self.iconURL = [NSURL URLWithString:[jsonData stringForKey:@"icon"]];
+            self.iconURL = [NSURL URLWithString:[jsonData valueForKey:@"icon"]];
         }
         if ([[jsonData stringForKey:@"message"] length] > 0)
         {
-            self.message = [jsonData stringForKey:@"message"];
+            self.message = [jsonData valueForKey:@"message"];
         }
         if ([[jsonData stringForKey:@"story"] length] > 0)
         {
-            self.story = [jsonData stringForKey:@"story"];
+            self.story = [jsonData valueForKey:@"story"];
         }
     }
     

@@ -9,9 +9,10 @@
 #import "UIFactory.h"
 
 @class FacebookResultCell;
+@class ROObject;
 @interface FacebookResultCellFactory : UIFactory
 
-+ (FacebookResultCell *)createfacebookCellWithCell:(FacebookResultCell *)cell feedItem:(id)currentFeedItem;
-+ (CGFloat)calculateHeightForFacebookCellWithData:(id)currentFeedItem;
++ (FacebookResultCell *)createfacebookCellWithCell:(FacebookResultCell *)cell feedItem:(ROObject*)currentFeedItem;
++ (CGFloat)calculateHeightForFacebookCellWithData:(ROObject*)currentFeedItem;
 
 @end

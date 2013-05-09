@@ -60,9 +60,9 @@ static NSString *facebookCellIdentifier = @"fbsearchcell";
         facebookCellToReturn = [[FacebookResultCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:facebookCellIdentifier];
         [facebookCellToReturn setSelectionStyle:UITableViewCellSelectionStyleNone];
     }
-//    JGBusiness *business = self.business;
+    ROObject *currentObject = [self.objectArray objectAtIndex:indexPath.row];
     
-    facebookCellToReturn = [FacebookResultCellFactory createfacebookCellWithCell:facebookCellToReturn feedItem:nil];
+    facebookCellToReturn = [FacebookResultCellFactory createfacebookCellWithCell:facebookCellToReturn feedItem:currentObject];
     facebookCellToReturn.tag = indexPath.section;
     
     return facebookCellToReturn;
