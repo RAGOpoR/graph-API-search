@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <ZodioAPIClientDelegate>
+@class ROObject;
+@interface ViewController : UIViewController {
+    ROObject *_currentObject;
+    UIImageView *_imageViewIcon;
+    UILabel *_messageLabel;
+}
+
+@property (nonatomic, strong) UIImageView *imageViewIcon;
+@property (nonatomic, strong) UILabel *messageLabel;
+@property (nonatomic, strong) ROObject *currentObject;
 
 @end

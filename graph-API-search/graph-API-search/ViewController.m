@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ROObject.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,40 @@
 
 @implementation ViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
+        self.imageViewIcon = [[UIImageView alloc] initWithFrame:CGRectMake(15, 15, 90, 90)];
+        self.messageLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 120, 290, 325)];
+        self.messageLabel.font = [UIFont boldSystemFontOfSize:12];
+        self.messageLabel.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1.0];
+        self.messageLabel.backgroundColor = [UIColor clearColor];
+        self.messageLabel.numberOfLines = 0;
+        
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [[ZodioAPIClient sharedClient] facebookGraphSearchForKeyword:@"Apple"
-                                                        withPage:0
-                                                        andLimit:0
-                                                        forOwner:(id<ZodioAPIClientDelegate>)self];
+    [self.imageViewIcon setImageWithURL:self.currentObject.iconURL
+                       placeholderImage:nil];
+    [self.messageLabel setText:self.currentObject.message];
+    
+//    self.view.layer.borderColor = [UIColor redColor].CGColor;
+//    self.view.layer.borderWidth = 1.0f;
+//
+//    self.imageViewIcon.layer.borderColor = [UIColor blackColor].CGColor;
+//    self.imageViewIcon.layer.borderWidth = 1.0f;
+//    self.messageLabel.layer.borderColor = [UIColor blackColor].CGColor;
+//    self.messageLabel.layer.borderWidth = 1.0f;
+    
+    [self.view addSubview:self.imageViewIcon];
+    [self.view addSubview:self.messageLabel];
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,11 +57,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)requestCompletedWithStatus:(NSInteger)status andResults:(NSMutableDictionary *)results requestType:(NSString *)requestType {
-    NSLog(@"%@",results);
-}
-
-- (void)requestType:(NSString *)request failedWithError:(NSError *)error andData:(id)JSON {
-    NSLog(@"%@",JSON);
-}
 @end

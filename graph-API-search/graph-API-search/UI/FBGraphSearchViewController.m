@@ -8,6 +8,7 @@
 
 #import "FBGraphSearchViewController.h"
 #import "FBGraphSearchDataSource.h"
+#import "ViewController.h"
 
 @interface FBGraphSearchViewController ()
 
@@ -56,6 +57,49 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"%d",indexPath.row);
+    ViewController *currentView = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    [currentView setCurrentObject:[self.dataSource.objectArray objectAtIndex:indexPath.row]];
+    [self.navigationController pushViewController:currentView animated:YES];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UIView *headerSearchView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    
+    
+    UIEdgeInsets imgButtonInsets = UIEdgeInsetsMake(5.f, 5.f, 5.f, 5.f);
+    UIImageView *shareButtonFrame = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Button"]];
+    shareButtonFrame.image = [shareButtonFrame.image resizableImageWithCapInsets:imgButtonInsets];
+    [shareButtonFrame setContentMode:UIViewContentModeScaleAspectFill];
+    [shareButtonFrame setFrame:CGRectMake(0, 143, 145, 36)];
+    
+    UIButton *searchButton = [[UIButton alloc] initWithFrame:CGRectMake(270, 8, 45, 36)];
+    
+    [searchButton setBackgroundImage:shareButtonFrame.image forState:UIControlStateNormal];
+    [searchButton addTarget:self action:@selector(doSearchButton:) forControlEvents:UIControlEventTouchUpInside];
+    [searchButton setTitle:NSLocalizedString(@"Search",nil) forState:UIControlStateNormal];
+    [searchButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [searchButton setTitleShadowColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    searchButton.titleLabel.shadowOffset = CGSizeMake(0,-1);
+    //        [self.shareButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    [searchButton.titleLabel setFont:[UIFont boldSystemFontOfSize:10]];
+    
+    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(5, 5, self.view.frame.size.width-55, 39)];
+    self.searchBar.delegate = (id<UISearchBarDelegate>)self;
+    self.searchBar.placeholder = NSLocalizedString(@"Search", @"Search");
+    self.searchBar.backgroundImage = [UIImage new];
+    [self.searchBar setTranslucent:YES];
+    
+    
+    [headerSearchView addSubview:self.searchBar];
+    [headerSearchView addSubview:searchButton];
+    headerSearchView.layer.borderColor = [UIColor blackColor].CGColor;
+    headerSearchView.layer.borderWidth = 1.0f;
+    return headerSearchView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    
+    return 50;
 }
 
 #pragma mark APIClient
@@ -77,6 +121,10 @@
 
 - (void)requestType:(NSString *)request failedWithError:(NSError *)error andData:(id)JSON {
 
+}
+
+- (void)doSearchButton:(id)sender {
+    NSLog(@"%@",self.searchBar.text);
 }
 
 @end

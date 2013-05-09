@@ -8,6 +8,10 @@
 
 #import "ROTableViewController.h"
 
-@interface FBGraphSearchViewController : ROTableViewController
+@interface FBGraphSearchViewController : ROTableViewController {
+    UISearchBar *_searchBar;
+}
+
+@property (nonatomic, strong) UISearchBar *searchBar;
 
 @end
