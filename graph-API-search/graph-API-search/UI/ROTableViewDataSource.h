@@ -16,4 +16,7 @@
 
 @property (strong, nonatomic) NSMutableArray *objectArray;
 
+- (void)processJSONArray:(NSArray *)jsonArray;
+- (NSArray *)createObjectsFromJsonArray:(NSArray *)rawObjectArray;
+- (ROObject*)processZodioObjectFromJSONData:(NSDictionary *)jsonData;
 @end

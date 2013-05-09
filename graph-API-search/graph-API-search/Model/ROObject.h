@@ -20,4 +20,6 @@
 @property (nonatomic, copy) NSString *message;
 @property (nonatomic, copy) NSString *story;
 
+- (id)initWithJsonData:(NSDictionary *)jsonData;
+
 @end

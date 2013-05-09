@@ -9,20 +9,40 @@
 #import "FBGraphSearchDataSource.h"
 #import "FacebookResultCell.h"
 #import "FacebookResultCellFactory.h"
+#import "ROObject.h"
+#import "ROObjectFactory.h"
 
 static NSString *facebookCellIdentifier = @"fbsearchcell";
 
 @implementation FBGraphSearchDataSource
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (void)processJSONArray:(NSArray *)jsonArray {    
+    [super processJSONArray:jsonArray];
+    
+}
+
+- (NSArray*)createObjectsFromJsonArray:(NSArray *)rawObjectArray {
+    NSMutableArray *arrayToReturn = [NSMutableArray array];
+    
+    for (id currentObject in rawObjectArray) {
+        
+        ROObject *currentROObject = [ROObjectFactory ROObjectWithData:(NSDictionary *)currentObject];
+        
+        if (currentROObject) {
+            [arrayToReturn addObject:currentROObject];
+        }
+    }
+    
+    return arrayToReturn;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSInteger rows = [self.objectArray count];
     
     return rows;
 }
 
-- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cellToReturn;
     
 
