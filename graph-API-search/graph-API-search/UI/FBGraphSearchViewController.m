@@ -101,6 +101,7 @@
 #pragma mark APIClient
 
 - (void)requestCompletedWithStatus:(NSInteger)status andResults:(NSMutableDictionary *)results requestType:(NSString *)requestType {
+    [SVProgressHUD dismiss];
     if (status == StatusOK) {
         if ([requestType isEqualToString:kZodioAPIClientRequestTypeGetFacebookGraphSearch]) {
 
@@ -116,7 +117,7 @@
 }
 
 - (void)requestType:(NSString *)request failedWithError:(NSError *)error andData:(id)JSON {
-
+    [SVProgressHUD showErrorWithStatus:@"Failed"];
 }
 
 - (void)doSearchButton:(id)sender {
@@ -132,6 +133,7 @@
                                                         withPage:0
                                                         andLimit:0
                                                         forOwner:(id<ZodioAPIClientDelegate>)self];
+    [SVProgressHUD showWithStatus:NSLocalizedString(@"Searching", @"Searching")];
 }
 
 @end
