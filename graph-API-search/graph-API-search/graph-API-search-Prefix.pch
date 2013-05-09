@@ -14,6 +14,7 @@
     #import "ZodioAPIClient.h"
     #import <QuartzCore/QuartzCore.h>
     #import "NSDictionary+Safety.h"
+    #import <SDWebImage/UIImageView+WebCache.h>
 #define kAPIBasePath                                        @"https://graph.facebook.com/"
 #define kZodioAPIClientRequestTypeGetFacebookGraphSearch    @"facebookgraphsearch"
 #define kSumOfStatusBarAndNavigationBarAndTabBar            113
