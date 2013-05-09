@@ -35,10 +35,6 @@
     self.tableView.isAccessibilityElement = YES;
     self.tableView.accessibilityIdentifier = @"FBGraphSearch list";
 	// Do any additional setup after loading the view.
-    [[ZodioAPIClient sharedClient] facebookGraphSearchForKeyword:@"Apple"
-                                                        withPage:0
-                                                        andLimit:0
-                                                        forOwner:(id<ZodioAPIClientDelegate>)self];
     
 }
 
@@ -124,7 +120,18 @@
 }
 
 - (void)doSearchButton:(id)sender {
-    NSLog(@"%@",self.searchBar.text);
+    NSString *unescaped = self.searchBar.text;
+    NSString *escapedString = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(
+                                                                                                    NULL,
+                                                                                                    (__bridge CFStringRef) unescaped,
+                                                                                                    NULL,
+                                                                                                    CFSTR("!*'();:@&=+$,/?%#[]"),
+                                                                                                    kCFStringEncodingUTF8));
+    NSLog(@"%@",escapedString);
+    [[ZodioAPIClient sharedClient] facebookGraphSearchForKeyword:escapedString
+                                                        withPage:0
+                                                        andLimit:0
+                                                        forOwner:(id<ZodioAPIClientDelegate>)self];
 }
 
 @end
