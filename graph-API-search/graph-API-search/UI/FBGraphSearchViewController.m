@@ -49,7 +49,7 @@
 #pragma mark - Table View Delegate Methods
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CGFloat height = 95;
+    CGFloat height = 100;
     
     return height;
 }

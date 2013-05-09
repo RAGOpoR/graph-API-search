@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FacebookResultCell : UITableViewCell
+@interface FacebookResultCell : UITableViewCell {
+    UIImageView *_imageViewIcon;
+    UILabel *_messageLabel;
+}
+
+@property (nonatomic, strong) UIImageView *imageViewIcon;
+@property (nonatomic, strong) UILabel *messageLabel;
 
 @end

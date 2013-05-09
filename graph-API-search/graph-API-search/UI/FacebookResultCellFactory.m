@@ -14,12 +14,15 @@
 @implementation FacebookResultCellFactory
 
 + (FacebookResultCell *)createfacebookCellWithCell:(FacebookResultCell *)cell feedItem:(ROObject*)currentItem {
-    [cell setText:currentItem.message];
-    cell.layer.borderColor = [UIColor redColor].CGColor;
-    cell.layer.borderWidth = 1.0f;
-
-    cell.contentView.layer.borderColor = [UIColor blackColor].CGColor;
-    cell.contentView.layer.borderWidth = 1.0f;
+    
+    [cell.imageViewIcon setImageWithURL:currentItem.iconURL
+                   placeholderImage:nil];
+    [cell.messageLabel setText:currentItem.message];
+//    cell.layer.borderColor = [UIColor redColor].CGColor;
+//    cell.layer.borderWidth = 1.0f;
+//
+//    cell.contentView.layer.borderColor = [UIColor blackColor].CGColor;
+//    cell.contentView.layer.borderWidth = 1.0f;
     
     return cell;
 }
