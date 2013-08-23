@@ -16,10 +16,23 @@
     #import "NSDictionary+Safety.h"
     #import <SDWebImage/UIImageView+WebCache.h>
     #import "SVProgressHUD.h"
+    #import <FacebookSDK/FacebookSDK.h>
 #define kAPIBasePath                                        @"https://graph.facebook.com/"
 #define kZodioAPIClientRequestTypeGetFacebookGraphSearch    @"facebookgraphsearch"
 #define kSumOfStatusBarAndNavigationBarAndTabBar            113
 #define kStatusBarHeight                20
 #define kNavigationBarHeight            44
+
+#define kExternalServiceFacebookIDFieldName @"fb_id"
+#define kExternalServiceFacebookExpiryDateFieldName @"fb_expire"
+#define kFBAccessTokenKeyFieldName  @"FBAccessTokenKey"
+#define kExternalServiceFacebookTokenFieldName  @"fb_token"
+#define kFacebookAppUserStatusFieldName @"is_app_user"
+#define kFacebookUserIDFieldName    @"uid"
+#define kFacebookAppUserStatusFieldName @"is_app_user"
+#define kFacebookUsernameFieldName  @"username"
+#define kFacebookFullNameFieldName  @"name"
+#define kFacebookUserThumbnailURLFieldName  @"pic_square"
+
 
 #endif

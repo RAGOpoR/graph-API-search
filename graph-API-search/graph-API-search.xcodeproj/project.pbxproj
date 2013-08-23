@@ -74,15 +74,26 @@
 		A64E548C173C3FF00089FC37 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = A64E5489173C3FF00089FC37 /* Button.png */; };
 		A64E548D173C3FF00089FC37 /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A64E548A173C3FF00089FC37 /* Button@2x.png */; };
 		A64E548E173C3FF00089FC37 /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A64E548A173C3FF00089FC37 /* Button@2x.png */; };
-		A64E5496173C45EB0089FC37 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A64E5490173C45EA0089FC37 /* LICENSE.txt */; };
-		A64E5497173C45EB0089FC37 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A64E5490173C45EA0089FC37 /* LICENSE.txt */; };
-		A64E5498173C45EB0089FC37 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A64E5491173C45EB0089FC37 /* README.md */; };
-		A64E5499173C45EB0089FC37 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A64E5491173C45EB0089FC37 /* README.md */; };
 		A64E549A173C45EB0089FC37 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A64E5493173C45EB0089FC37 /* SVProgressHUD.bundle */; };
 		A64E549B173C45EB0089FC37 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A64E5493173C45EB0089FC37 /* SVProgressHUD.bundle */; };
 		A64E549C173C45EB0089FC37 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A64E5495173C45EB0089FC37 /* SVProgressHUD.m */; };
 		A64E549D173C45EB0089FC37 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A64E5495173C45EB0089FC37 /* SVProgressHUD.m */; };
 		A64E549F173C47850089FC37 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64E549E173C47840089FC37 /* QuartzCore.framework */; };
+		A65E3B2F17C74AA600B6FC8C /* ROPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = A65E3B2E17C74AA600B6FC8C /* ROPerson.m */; };
+		A65E3B3017C74AA600B6FC8C /* ROPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = A65E3B2E17C74AA600B6FC8C /* ROPerson.m */; };
+		A65E3B3317C74AC500B6FC8C /* ROUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A65E3B3217C74AC500B6FC8C /* ROUser.m */; };
+		A65E3B3417C74AC500B6FC8C /* ROUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A65E3B3217C74AC500B6FC8C /* ROUser.m */; };
+		A65E3B3C17C74C3D00B6FC8C /* ROExternalServiceCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = A65E3B3B17C74C3D00B6FC8C /* ROExternalServiceCredential.m */; };
+		A65E3B3D17C74C3D00B6FC8C /* ROExternalServiceCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = A65E3B3B17C74C3D00B6FC8C /* ROExternalServiceCredential.m */; };
+		A6D256BD17C74F3E0050650D /* ROFacebookCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D256BC17C74F3E0050650D /* ROFacebookCredential.m */; };
+		A6D256BF17C751C40050650D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D256BE17C751C40050650D /* FacebookSDK.framework */; };
+		A6D256C017C751C40050650D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D256BE17C751C40050650D /* FacebookSDK.framework */; };
+		A6D256C617C75C610050650D /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D256C317C75C610050650D /* ISO8601DateFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6D256C717C75C610050650D /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D256C317C75C610050650D /* ISO8601DateFormatter.m */; };
+		A6D256C817C75C610050650D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6D256C417C75C610050650D /* LICENSE.txt */; };
+		A6D256C917C75C610050650D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6D256C417C75C610050650D /* LICENSE.txt */; };
+		A6D256CA17C75C610050650D /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6D256C517C75C610050650D /* README.txt */; };
+		A6D256CB17C75C610050650D /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6D256C517C75C610050650D /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +107,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A64E53B3173BFE210089FC37 /* graph-API-search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "graph-API-search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64E53B3173BFE210089FC37 /* NamJai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamJai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64E53B6173BFE210089FC37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A64E53B8173BFE210089FC37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A64E53BA173BFE210089FC37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -165,12 +176,23 @@
 		A64E5487173C32630089FC37 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A64E5489173C3FF00089FC37 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
 		A64E548A173C3FF00089FC37 /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
-		A64E5490173C45EA0089FC37 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		A64E5491173C45EB0089FC37 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		A64E5493173C45EB0089FC37 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		A64E5494173C45EB0089FC37 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		A64E5495173C45EB0089FC37 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		A64E549E173C47840089FC37 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A65E3B2D17C74AA600B6FC8C /* ROPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROPerson.h; path = Model/ROPerson.h; sourceTree = "<group>"; };
+		A65E3B2E17C74AA600B6FC8C /* ROPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROPerson.m; path = Model/ROPerson.m; sourceTree = "<group>"; };
+		A65E3B3117C74AC400B6FC8C /* ROUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROUser.h; path = Model/ROUser.h; sourceTree = "<group>"; };
+		A65E3B3217C74AC500B6FC8C /* ROUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROUser.m; path = Model/ROUser.m; sourceTree = "<group>"; };
+		A65E3B3A17C74C3D00B6FC8C /* ROExternalServiceCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROExternalServiceCredential.h; sourceTree = "<group>"; };
+		A65E3B3B17C74C3D00B6FC8C /* ROExternalServiceCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROExternalServiceCredential.m; sourceTree = "<group>"; };
+		A6D256BB17C74F3E0050650D /* ROFacebookCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFacebookCredential.h; sourceTree = "<group>"; };
+		A6D256BC17C74F3E0050650D /* ROFacebookCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFacebookCredential.m; sourceTree = "<group>"; };
+		A6D256BE17C751C40050650D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		A6D256C217C75C610050650D /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		A6D256C317C75C610050650D /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
+		A6D256C417C75C610050650D /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		A6D256C517C75C610050650D /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +206,7 @@
 				A64E53B9173BFE210089FC37 /* Foundation.framework in Frameworks */,
 				A64E53BB173BFE210089FC37 /* CoreGraphics.framework in Frameworks */,
 				A64E5485173C32070089FC37 /* SDWebImage.framework in Frameworks */,
+				A6D256BF17C751C40050650D /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +218,7 @@
 				A64E53DC173BFE210089FC37 /* UIKit.framework in Frameworks */,
 				A64E53DD173BFE210089FC37 /* Foundation.framework in Frameworks */,
 				A64E5486173C32070089FC37 /* SDWebImage.framework in Frameworks */,
+				A6D256C017C751C40050650D /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +228,7 @@
 		A64E53AA173BFE210089FC37 = {
 			isa = PBXGroup;
 			children = (
+				A6D256BE17C751C40050650D /* FacebookSDK.framework */,
 				A64E549E173C47840089FC37 /* QuartzCore.framework */,
 				A64E5487173C32630089FC37 /* ImageIO.framework */,
 				A64E53BC173BFE210089FC37 /* graph-API-search */,
@@ -216,7 +241,7 @@
 		A64E53B4173BFE210089FC37 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A64E53B3173BFE210089FC37 /* graph-API-search.app */,
+				A64E53B3173BFE210089FC37 /* NamJai.app */,
 				A64E53D9173BFE210089FC37 /* graph-API-searchTests.octest */,
 			);
 			name = Products;
@@ -237,6 +262,7 @@
 		A64E53BC173BFE210089FC37 /* graph-API-search */ = {
 			isa = PBXGroup;
 			children = (
+				A65E3B3517C74BCC00B6FC8C /* External Service */,
 				A64E544E173C2A160089FC37 /* Category */,
 				A64E5441173C20630089FC37 /* FactoryClass */,
 				A64E543C173C1FE30089FC37 /* TableViewCell */,
@@ -309,6 +335,10 @@
 			children = (
 				A64E53FC173C043D0089FC37 /* ROObject.h */,
 				A64E53FD173C043D0089FC37 /* ROObject.m */,
+				A65E3B2D17C74AA600B6FC8C /* ROPerson.h */,
+				A65E3B2E17C74AA600B6FC8C /* ROPerson.m */,
+				A65E3B3117C74AC400B6FC8C /* ROUser.h */,
+				A65E3B3217C74AC500B6FC8C /* ROUser.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -324,6 +354,7 @@
 		A64E5401173C08720089FC37 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				A6D256C117C75C610050650D /* ISO8601DateFormatter */,
 				A64E548F173C45EA0089FC37 /* SVProgressHUD */,
 				A64E5402173C08720089FC37 /* AFNetworking */,
 			);
@@ -409,8 +440,6 @@
 		A64E548F173C45EA0089FC37 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				A64E5490173C45EA0089FC37 /* LICENSE.txt */,
-				A64E5491173C45EB0089FC37 /* README.md */,
 				A64E5492173C45EB0089FC37 /* SVProgressHUD */,
 			);
 			path = SVProgressHUD;
@@ -426,12 +455,34 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		A65E3B3517C74BCC00B6FC8C /* External Service */ = {
+			isa = PBXGroup;
+			children = (
+				A65E3B3A17C74C3D00B6FC8C /* ROExternalServiceCredential.h */,
+				A65E3B3B17C74C3D00B6FC8C /* ROExternalServiceCredential.m */,
+				A6D256BB17C74F3E0050650D /* ROFacebookCredential.h */,
+				A6D256BC17C74F3E0050650D /* ROFacebookCredential.m */,
+			);
+			path = "External Service";
+			sourceTree = "<group>";
+		};
+		A6D256C117C75C610050650D /* ISO8601DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				A6D256C217C75C610050650D /* ISO8601DateFormatter.h */,
+				A6D256C317C75C610050650D /* ISO8601DateFormatter.m */,
+				A6D256C417C75C610050650D /* LICENSE.txt */,
+				A6D256C517C75C610050650D /* README.txt */,
+			);
+			path = ISO8601DateFormatter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A64E53B2173BFE210089FC37 /* graph-API-search */ = {
+		A64E53B2173BFE210089FC37 /* NamJai */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A64E53EB173BFE210089FC37 /* Build configuration list for PBXNativeTarget "graph-API-search" */;
+			buildConfigurationList = A64E53EB173BFE210089FC37 /* Build configuration list for PBXNativeTarget "NamJai" */;
 			buildPhases = (
 				A64E53AF173BFE210089FC37 /* Sources */,
 				A64E53B0173BFE210089FC37 /* Frameworks */,
@@ -441,9 +492,9 @@
 			);
 			dependencies = (
 			);
-			name = "graph-API-search";
+			name = NamJai;
 			productName = "graph-API-search";
-			productReference = A64E53B3173BFE210089FC37 /* graph-API-search.app */;
+			productReference = A64E53B3173BFE210089FC37 /* NamJai.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A64E53D8173BFE210089FC37 /* graph-API-searchTests */ = {
@@ -486,7 +537,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A64E53B2173BFE210089FC37 /* graph-API-search */,
+				A64E53B2173BFE210089FC37 /* NamJai */,
 				A64E53D8173BFE210089FC37 /* graph-API-searchTests */,
 			);
 		};
@@ -506,9 +557,9 @@
 				A64E542D173C08720089FC37 /* README.md in Resources */,
 				A64E548B173C3FF00089FC37 /* Button.png in Resources */,
 				A64E548D173C3FF00089FC37 /* Button@2x.png in Resources */,
-				A64E5496173C45EB0089FC37 /* LICENSE.txt in Resources */,
-				A64E5498173C45EB0089FC37 /* README.md in Resources */,
 				A64E549A173C45EB0089FC37 /* SVProgressHUD.bundle in Resources */,
+				A6D256C817C75C610050650D /* LICENSE.txt in Resources */,
+				A6D256CA17C75C610050650D /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,9 +572,9 @@
 				A64E542E173C08720089FC37 /* README.md in Resources */,
 				A64E548C173C3FF00089FC37 /* Button.png in Resources */,
 				A64E548E173C3FF00089FC37 /* Button@2x.png in Resources */,
-				A64E5497173C45EB0089FC37 /* LICENSE.txt in Resources */,
-				A64E5499173C45EB0089FC37 /* README.md in Resources */,
 				A64E549B173C45EB0089FC37 /* SVProgressHUD.bundle in Resources */,
+				A6D256C917C75C610050650D /* LICENSE.txt in Resources */,
+				A6D256CB17C75C610050650D /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +625,11 @@
 				A64E544C173C27C50089FC37 /* ROObjectFactory.m in Sources */,
 				A64E5451173C2A3A0089FC37 /* NSDictionary+Safety.m in Sources */,
 				A64E549C173C45EB0089FC37 /* SVProgressHUD.m in Sources */,
+				A65E3B2F17C74AA600B6FC8C /* ROPerson.m in Sources */,
+				A65E3B3317C74AC500B6FC8C /* ROUser.m in Sources */,
+				A65E3B3C17C74C3D00B6FC8C /* ROExternalServiceCredential.m in Sources */,
+				A6D256BD17C74F3E0050650D /* ROFacebookCredential.m in Sources */,
+				A6D256C617C75C610050650D /* ISO8601DateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +659,10 @@
 				A64E544D173C27C50089FC37 /* ROObjectFactory.m in Sources */,
 				A64E5452173C2A3A0089FC37 /* NSDictionary+Safety.m in Sources */,
 				A64E549D173C45EB0089FC37 /* SVProgressHUD.m in Sources */,
+				A65E3B3017C74AA600B6FC8C /* ROPerson.m in Sources */,
+				A65E3B3417C74AC500B6FC8C /* ROUser.m in Sources */,
+				A65E3B3D17C74C3D00B6FC8C /* ROExternalServiceCredential.m in Sources */,
+				A6D256C717C75C610050650D /* ISO8601DateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,7 +671,7 @@
 /* Begin PBXTargetDependency section */
 		A64E53DF173BFE210089FC37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A64E53B2173BFE210089FC37 /* graph-API-search */;
+			target = A64E53B2173BFE210089FC37 /* NamJai */;
 			targetProxy = A64E53DE173BFE210089FC37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -780,13 +840,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A64E53EB173BFE210089FC37 /* Build configuration list for PBXNativeTarget "graph-API-search" */ = {
+		A64E53EB173BFE210089FC37 /* Build configuration list for PBXNativeTarget "NamJai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A64E53EC173BFE210089FC37 /* Debug */,
 				A64E53ED173BFE210089FC37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A64E53EE173BFE210089FC37 /* Build configuration list for PBXNativeTarget "graph-API-searchTests" */ = {
 			isa = XCConfigurationList;
@@ -795,6 +856,7 @@
 				A64E53F0173BFE210089FC37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
