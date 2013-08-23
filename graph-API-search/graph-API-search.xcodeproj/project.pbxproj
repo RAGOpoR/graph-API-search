@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A60053A417C7987C001E02DB /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A60053A217C7987C001E02DB /* UIDeviceHardware.m */; };
 		A64E53B7173BFE210089FC37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64E53B6173BFE210089FC37 /* UIKit.framework */; };
 		A64E53B9173BFE210089FC37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64E53B8173BFE210089FC37 /* Foundation.framework */; };
 		A64E53BB173BFE210089FC37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64E53BA173BFE210089FC37 /* CoreGraphics.framework */; };
@@ -85,6 +86,7 @@
 		A65E3B3417C74AC500B6FC8C /* ROUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A65E3B3217C74AC500B6FC8C /* ROUser.m */; };
 		A65E3B3C17C74C3D00B6FC8C /* ROExternalServiceCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = A65E3B3B17C74C3D00B6FC8C /* ROExternalServiceCredential.m */; };
 		A65E3B3D17C74C3D00B6FC8C /* ROExternalServiceCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = A65E3B3B17C74C3D00B6FC8C /* ROExternalServiceCredential.m */; };
+		A695D4A217C79A1400DF73E6 /* URLCacheAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A695D4A117C79A1400DF73E6 /* URLCacheAlert.m */; };
 		A69B53EB17C7639E007DA87C /* libUAirship-2.0.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A69B538917C7639E007DA87C /* libUAirship-2.0.2.a */; };
 		A69B53EC17C7639E007DA87C /* UABarButtonSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B539517C7639E007DA87C /* UABarButtonSegmentedControl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A69B53ED17C7639E007DA87C /* UABeveledLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B539717C7639E007DA87C /* UABeveledLoadingIndicator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -154,6 +156,14 @@
 		A69B543817C76489007DA87C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69B543717C76489007DA87C /* MapKit.framework */; };
 		A69B543A17C76AA6007DA87C /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A69B543917C76AA6007DA87C /* AirshipConfig.plist */; };
 		A69B543B17C76AA6007DA87C /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A69B543917C76AA6007DA87C /* AirshipConfig.plist */; };
+		A69B544417C77100007DA87C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B544117C77100007DA87C /* LoginViewController.m */; };
+		A69B544517C77100007DA87C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69B544217C77100007DA87C /* LoginViewController.xib */; };
+		A69B544617C77100007DA87C /* LoginViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69B544317C77100007DA87C /* LoginViewController_iPhone5.xib */; };
+		A69B544917C77275007DA87C /* ZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B544817C77275007DA87C /* ZViewController.m */; };
+		A69B544D17C778C6007DA87C /* UIView+Alignment.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B544C17C778C6007DA87C /* UIView+Alignment.m */; };
+		A69B545417C77B82007DA87C /* JBKenBurnsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B545117C77B82007DA87C /* JBKenBurnsView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A69B545B17C794D5007DA87C /* UIView+Alignment.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B544C17C778C6007DA87C /* UIView+Alignment.m */; };
+		A69B545C17C7974F007DA87C /* ZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B544817C77275007DA87C /* ZViewController.m */; };
 		A6D256BD17C74F3E0050650D /* ROFacebookCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D256BC17C74F3E0050650D /* ROFacebookCredential.m */; };
 		A6D256BF17C751C40050650D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D256BE17C751C40050650D /* FacebookSDK.framework */; };
 		A6D256C017C751C40050650D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D256BE17C751C40050650D /* FacebookSDK.framework */; };
@@ -172,6 +182,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A60053A217C7987C001E02DB /* UIDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIDeviceHardware.m; path = UIDeviceHardware/UIDeviceHardware.m; sourceTree = "<group>"; };
+		A60053A317C7987C001E02DB /* UIDeviceHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDeviceHardware.h; path = UIDeviceHardware/UIDeviceHardware.h; sourceTree = "<group>"; };
 		A64E53B3173BFE210089FC37 /* NamJai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamJai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64E53B6173BFE210089FC37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A64E53B8173BFE210089FC37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -251,6 +263,8 @@
 		A65E3B3217C74AC500B6FC8C /* ROUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROUser.m; path = Model/ROUser.m; sourceTree = "<group>"; };
 		A65E3B3A17C74C3D00B6FC8C /* ROExternalServiceCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROExternalServiceCredential.h; sourceTree = "<group>"; };
 		A65E3B3B17C74C3D00B6FC8C /* ROExternalServiceCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROExternalServiceCredential.m; sourceTree = "<group>"; };
+		A695D4A017C79A1400DF73E6 /* URLCacheAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLCacheAlert.h; sourceTree = "<group>"; };
+		A695D4A117C79A1400DF73E6 /* URLCacheAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLCacheAlert.m; sourceTree = "<group>"; };
 		A69B535617C7639D007DA87C /* UAAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAAnalytics.h; sourceTree = "<group>"; };
 		A69B535717C7639D007DA87C /* UAAnalyticsDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAAnalyticsDBManager.h; sourceTree = "<group>"; };
 		A69B535817C7639D007DA87C /* UAAutoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAAutoAppDelegate.h; sourceTree = "<group>"; };
@@ -394,6 +408,16 @@
 		A69B543517C76481007DA87C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A69B543717C76489007DA87C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A69B543917C76AA6007DA87C /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
+		A69B544017C77100007DA87C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A69B544117C77100007DA87C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A69B544217C77100007DA87C /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A69B544317C77100007DA87C /* LoginViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController_iPhone5.xib; sourceTree = "<group>"; };
+		A69B544717C77275007DA87C /* ZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZViewController.h; path = "Template Class/ZViewController.h"; sourceTree = "<group>"; };
+		A69B544817C77275007DA87C /* ZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZViewController.m; path = "Template Class/ZViewController.m"; sourceTree = "<group>"; };
+		A69B544B17C778C6007DA87C /* UIView+Alignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Alignment.h"; sourceTree = "<group>"; };
+		A69B544C17C778C6007DA87C /* UIView+Alignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Alignment.m"; sourceTree = "<group>"; };
+		A69B545017C77B82007DA87C /* JBKenBurnsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBKenBurnsView.h; sourceTree = "<group>"; };
+		A69B545117C77B82007DA87C /* JBKenBurnsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBKenBurnsView.m; sourceTree = "<group>"; };
 		A6D256BB17C74F3E0050650D /* ROFacebookCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFacebookCredential.h; sourceTree = "<group>"; };
 		A6D256BC17C74F3E0050650D /* ROFacebookCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFacebookCredential.m; sourceTree = "<group>"; };
 		A6D256BE17C751C40050650D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
@@ -491,6 +515,7 @@
 		A64E53BC173BFE210089FC37 /* graph-API-search */ = {
 			isa = PBXGroup;
 			children = (
+				A69B543E17C77028007DA87C /* component */,
 				A65E3B3517C74BCC00B6FC8C /* External Service */,
 				A64E544E173C2A160089FC37 /* Category */,
 				A64E5441173C20630089FC37 /* FactoryClass */,
@@ -552,6 +577,8 @@
 		A64E53F1173C01BA0089FC37 /* Template Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A69B544717C77275007DA87C /* ZViewController.h */,
+				A69B544817C77275007DA87C /* ZViewController.m */,
 				A64E53F2173C02340089FC37 /* ROTableViewController.h */,
 				A64E53F3173C02340089FC37 /* ROTableViewController.m */,
 				A64E53F6173C030B0089FC37 /* ROTableViewDataSource.h */,
@@ -584,6 +611,11 @@
 		A64E5401173C08720089FC37 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				A695D4A017C79A1400DF73E6 /* URLCacheAlert.h */,
+				A695D4A117C79A1400DF73E6 /* URLCacheAlert.m */,
+				A60053A217C7987C001E02DB /* UIDeviceHardware.m */,
+				A60053A317C7987C001E02DB /* UIDeviceHardware.h */,
+				A69B544E17C77B82007DA87C /* JBKenBurnsView */,
 				A69B535417C7639D007DA87C /* Airship */,
 				A6D256C117C75C610050650D /* ISO8601DateFormatter */,
 				A64E548F173C45EA0089FC37 /* SVProgressHUD */,
@@ -662,6 +694,7 @@
 		A64E544E173C2A160089FC37 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A69B544A17C778C6007DA87C /* UIView+Alignment */,
 				A64E544F173C2A3A0089FC37 /* NSDictionary+Safety.h */,
 				A64E5450173C2A3A0089FC37 /* NSDictionary+Safety.m */,
 			);
@@ -987,6 +1020,52 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		A69B543E17C77028007DA87C /* component */ = {
+			isa = PBXGroup;
+			children = (
+				A69B543F17C77100007DA87C /* LoginView */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		A69B543F17C77100007DA87C /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				A69B544017C77100007DA87C /* LoginViewController.h */,
+				A69B544117C77100007DA87C /* LoginViewController.m */,
+				A69B544217C77100007DA87C /* LoginViewController.xib */,
+				A69B544317C77100007DA87C /* LoginViewController_iPhone5.xib */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		A69B544A17C778C6007DA87C /* UIView+Alignment */ = {
+			isa = PBXGroup;
+			children = (
+				A69B544B17C778C6007DA87C /* UIView+Alignment.h */,
+				A69B544C17C778C6007DA87C /* UIView+Alignment.m */,
+			);
+			name = "UIView+Alignment";
+			path = "Category/UIView+Alignment";
+			sourceTree = "<group>";
+		};
+		A69B544E17C77B82007DA87C /* JBKenBurnsView */ = {
+			isa = PBXGroup;
+			children = (
+				A69B544F17C77B82007DA87C /* KenBurns */,
+			);
+			path = JBKenBurnsView;
+			sourceTree = "<group>";
+		};
+		A69B544F17C77B82007DA87C /* KenBurns */ = {
+			isa = PBXGroup;
+			children = (
+				A69B545017C77B82007DA87C /* JBKenBurnsView.h */,
+				A69B545117C77B82007DA87C /* JBKenBurnsView.m */,
+			);
+			path = KenBurns;
+			sourceTree = "<group>";
+		};
 		A6D256C117C75C610050650D /* ISO8601DateFormatter */ = {
 			isa = PBXGroup;
 			children = (
@@ -1109,6 +1188,8 @@
 				A69B542117C7639E007DA87C /* UAPushSettingsUserInfoView.xib in Resources */,
 				A69B542217C7639E007DA87C /* UAPushSettingsView.xib in Resources */,
 				A69B543A17C76AA6007DA87C /* AirshipConfig.plist in Resources */,
+				A69B544517C77100007DA87C /* LoginViewController.xib in Resources */,
+				A69B544617C77100007DA87C /* LoginViewController_iPhone5.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1202,6 +1283,12 @@
 				A69B540F17C7639E007DA87C /* UAPushSettingsUserInfoViewController.m in Sources */,
 				A69B541017C7639E007DA87C /* UAPushSettingsViewController.m in Sources */,
 				A69B541117C7639E007DA87C /* UAPushUI.m in Sources */,
+				A69B544417C77100007DA87C /* LoginViewController.m in Sources */,
+				A69B544D17C778C6007DA87C /* UIView+Alignment.m in Sources */,
+				A69B545417C77B82007DA87C /* JBKenBurnsView.m in Sources */,
+				A69B545C17C7974F007DA87C /* ZViewController.m in Sources */,
+				A60053A417C7987C001E02DB /* UIDeviceHardware.m in Sources */,
+				A695D4A217C79A1400DF73E6 /* URLCacheAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1235,6 +1322,8 @@
 				A65E3B3417C74AC500B6FC8C /* ROUser.m in Sources */,
 				A65E3B3D17C74C3D00B6FC8C /* ROExternalServiceCredential.m in Sources */,
 				A6D256C717C75C610050650D /* ISO8601DateFormatter.m in Sources */,
+				A69B544917C77275007DA87C /* ZViewController.m in Sources */,
+				A69B545B17C794D5007DA87C /* UIView+Alignment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

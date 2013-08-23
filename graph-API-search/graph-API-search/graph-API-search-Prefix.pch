@@ -17,6 +17,7 @@
     #import <SDWebImage/UIImageView+WebCache.h>
     #import "SVProgressHUD.h"
     #import <FacebookSDK/FacebookSDK.h>
+    #import "UIDeviceHardware.h"
 #define kAPIBasePath                                        @"https://graph.facebook.com/"
 #define kZodioAPIClientRequestTypeGetFacebookGraphSearch    @"facebookgraphsearch"
 #define kSumOfStatusBarAndNavigationBarAndTabBar            113

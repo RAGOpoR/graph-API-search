@@ -22,14 +22,14 @@
 }
 
 + (ROObject *)objectWithData:(NSDictionary *)data {
-    //    DDLogVerbose(@"data %@",data);
+    //    NSLog(@"data %@",data);
     ROObject *review = [[ROObject alloc] initWithJsonData:data];
     
 //    [review setObjectType:ZodioObjectTypeReview];
 //    
 //    [self setupStandardUGObject:review withData:data];
 //    
-//    //    DDLogWarn(@"Asking to create photo object using: %@", [[self photoArrayFromData:data] objectAtIndex:0]);
+//    //    DNSLogWarn(@"Asking to create photo object using: %@", [[self photoArrayFromData:data] objectAtIndex:0]);
 //    
 //    if ([self checkForPhotoInObjectData:data])
 //    {
@@ -42,7 +42,7 @@
 //    {
 //        ////Has photos, process photo by creating photo object
 //        NSArray *photoArray = [data safeValueForKeyPath:kActivityFeedPhotoArrayName];
-//        DDLogVerbose(@"Creating photo with data: %@", [photoArray objectAtIndex:0]);
+//        NSLog(@"Creating photo with data: %@", [photoArray objectAtIndex:0]);
 //        
 //    }
 //    
