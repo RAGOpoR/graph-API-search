@@ -19,6 +19,7 @@
     #import <FacebookSDK/FacebookSDK.h>
     #import "UIDeviceHardware.h"
     #import "ZViewController.h"
+    #import "ZNavigationBar.h"
 #define kAPIBaseURLString                                   @"http://namjai.eu1.frbit.net"
 #define kAPIBasePath                                        @"/public"
 
@@ -40,6 +41,8 @@
 #define kAccessTokenFieldName   @"access_token"
 
 #define kLoginPath                                          @"/auth/login"
+#define kCreateEvents                                       @"/event/create"
 #define kAPIClientRequestTypeFacebook                       @"facebookLogin"
+#define kAPIClientRequestTypeCreateTicket                   @"createTicket"
 
 #endif

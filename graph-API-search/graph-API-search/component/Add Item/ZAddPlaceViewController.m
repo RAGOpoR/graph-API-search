@@ -192,7 +192,7 @@
 
 - (void)viewDidUnload {
     
-    DDLogVerbose(@"View did unload");
+    //DDLogVerbose(@"View did unload");
 
     [self setAddBusinessTableView:nil];
     [self setAddBusinessTableViewMapCell:nil];
@@ -277,7 +277,7 @@
     {
 //        self.businessName = ((UITextField*)notification.object).text;
 //        self.business.name = self.businessName;
-//        DDLogVerbose(@"Business name is now: %@", self.businessName);
+//        //DDLogVerbose(@"Business name is now: %@", self.businessName);
     }
 
 }
@@ -444,7 +444,7 @@
         case 1:
         {
             //Touched map cell
-            DDLogVerbose(@"Got a touch on map cell");
+            //DDLogVerbose(@"Got a touch on map cell");
             ZAddPlaceLocationSelector *locationSelector = [[ZAddPlaceLocationSelector alloc] initWithNibName:nil bundle:nil];
             locationSelector.delegate = self;
             
@@ -554,7 +554,7 @@
 
 - (IBAction)backgroundTap:(id)sender
 {
-    DDLogVerbose(@"Got background tap");
+    //DDLogVerbose(@"Got background tap");
     [self.view endEditing:YES];
 }
 
@@ -591,7 +591,7 @@
 
 - (void)categorySelected:(NSString *)category
 {
-    DDLogVerbose(@"Received category: %@", category);
+    //DDLogVerbose(@"Received category: %@", category);
     self.businessCategory = category;
     self.business.category = [[ZodioAPIClient sharedClient] categoryFullNameForKey:category];
     self.business.displayCategory = [[ZodioAPIClient sharedClient] categoryFullNameForKey:category];
@@ -604,7 +604,7 @@
 
 - (void)addressEntered:(NSMutableDictionary*)address
 {
-    DDLogVerbose(@"Received business address info: %@", address);
+    //DDLogVerbose(@"Received business address info: %@", address);
     self.businessAddressInfo = address;
     
     //Set new display address into business object, array style
@@ -710,7 +710,7 @@
         
         [businessInfoDictionary safeSetObject:businessLocationPlacemarkAsJSONString forKey:kAddPlacePlacemarkFieldName];
         
-        DDLogVerbose(@"Business info being sent to ZodioAPIClient: %@", businessInfoDictionary);
+        //DDLogVerbose(@"Business info being sent to ZodioAPIClient: %@", businessInfoDictionary);
         
         ///Change to regular HUD because 'Adding' isn't always applicable, this page can now be used to edit
 //        [SVProgressHUD showWithStatus:svProgressHudAddingMessage];
@@ -743,12 +743,12 @@
 
         [reverseGeocoder reverseGeocodeLocation:myLocation completionHandler:^(NSArray *placemarks, NSError *error)
          {
-             DDLogVerbose(@"reverseGeocodeLocation:completionHandler: Completion Handler called!");
+             //DDLogVerbose(@"reverseGeocodeLocation:completionHandler: Completion Handler called!");
              if (error){
-                 DDLogVerbose(@"Geocode failed with error: %@", error);
+                 //DDLogVerbose(@"Geocode failed with error: %@", error);
                  return;
              }
-             DDLogVerbose(@"Received placemarks: %@", placemarks);
+             //DDLogVerbose(@"Received placemarks: %@", placemarks);
 
              CLPlacemark *myPlacemark = [placemarks objectAtIndex:0];
              NSString *countryCode = myPlacemark.ISOcountryCode;
@@ -761,8 +761,8 @@
              NSString *subThoroughfare = myPlacemark.subThoroughfare;
              NSString *postalCode = myPlacemark.postalCode;
              
-             DDLogVerbose(@"My thoroughfare: %@ - %@", thoroughfare, myPlacemark.thoroughfare);
-             DDLogVerbose(@"My locality: %@ - %@", locality, myPlacemark.locality);
+             //DDLogVerbose(@"My thoroughfare: %@ - %@", thoroughfare, myPlacemark.thoroughfare);
+             //DDLogVerbose(@"My locality: %@ - %@", locality, myPlacemark.locality);
              
              NSMutableDictionary *placemarkDictionary = [[NSMutableDictionary alloc] init];
              
@@ -776,13 +776,13 @@
              [placemarkDictionary safeSetObject:thoroughfare forKey:@"thoroughfare"];
              [placemarkDictionary safeSetObject:subThoroughfare forKey:@"sub_thoroughfare"];
              
-             DDLogVerbose(@"Placemark dictionary: %@", placemarkDictionary);
+             //DDLogVerbose(@"Placemark dictionary: %@", placemarkDictionary);
              
              businessLocationPlacemarkAsJSONString = [placemarkDictionary JSONString];
              
-             DDLogVerbose(@"JSON String: %@", businessLocationPlacemarkAsJSONString);
+             //DDLogVerbose(@"JSON String: %@", businessLocationPlacemarkAsJSONString);
              
-             DDLogVerbose(@"My country code: %@ and countryName: %@", countryCode, countryName);
+             //DDLogVerbose(@"My country code: %@ and countryName: %@", countryCode, countryName);
              
              if (!self.businessAddressEntered && self.editingMode == kAddPlaceEditingModeAdd)
              {
@@ -805,7 +805,7 @@
     
     BOOL websiteIsValid = YES;
     
-    DDLogVerbose(@"Validating %@", website);
+    //DDLogVerbose(@"Validating %@", website);
     
     if (website != nil && [website length] > 0)
     {

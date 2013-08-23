@@ -9,7 +9,8 @@
 #import "FBGraphSearchViewController.h"
 #import "FBGraphSearchDataSource.h"
 #import "ViewController.h"
-
+#import "AddItemViewController.h"
+#import "ZAddPlaceLocationSelector.h"
 @interface FBGraphSearchViewController ()
 
 @end
@@ -142,5 +143,22 @@
     //Add New Item
 //    DealfishAppDelegate *appDelegate = [DealfishAppDelegate sharedDelegate];
 //    [appDelegate gotoAddItemViewWithNavBack:true andViewController:self];
+    
+    AddItemViewController *addItemViewController = [[AddItemViewController alloc] initWithNibName:@"AddItemViewController" bundle:nil];
+    ZAddPlaceLocationSelector *zAddLocation = [[ZAddPlaceLocationSelector alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:zAddLocation];
+    ZNavigationBar *navBar = (ZNavigationBar *)[navController navigationBar];
+    //    [navBar setTintColor:kZodioColorBlue];
+    [navBar setBackgroundImage:[UIImage imageNamed:@"Home_TopBar_RoundCorner_withLogo"] forBarMetrics:UIBarMetricsDefault];
+//    ZNavigationController *addPlaceNav = [ZRootViewController customizedNavigationController];
+//    [navController setViewControllers:[NSArray arrayWithObject:addItemViewController]];
+    
+    [self.navigationController presentViewController:navController
+                                            animated:YES
+                                          completion:nil];
+    
+    
+    
+//    [self presentViewController:addItemViewController animated:YES completion:nil];
 }
 @end

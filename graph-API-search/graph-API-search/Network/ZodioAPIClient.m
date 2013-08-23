@@ -163,4 +163,32 @@ __strong static NSMutableDictionary *connectionTable = nil;
     
 }
 
+- (void)createTicketWithString:(NSString *)string andLocation:(NSString *)location forOwner:(id<ZodioAPIClientDelegate>)owner {
+    
+    NSString *requestPath = kAPIBasePath;
+    requestPath = [requestPath stringByAppendingString:[NSString stringWithFormat:@"%@",kCreateEvents]];
+    
+    NSMutableDictionary *loginParameter = [[NSMutableDictionary alloc] init];
+    [loginParameter setObject:@"saakyz@gmail.com" forKey:@"access_token"];
+    [loginParameter setObject:string forKey:@"where_text"];
+    [loginParameter setObject:location forKey:@"location"];
+    
+    
+    NSMutableURLRequest *photosRequest = [[ZodioAPIClient sharedClient] requestWithMethod:@"GET" path:requestPath parameters:loginParameter];
+    
+    AFJSONRequestOperation *loginRequestOperation = [AFJSONRequestOperation JSONRequestOperationWithRequest:photosRequest success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON)
+                                                     {
+                                                         [self processListData:JSON withFields:nil forOwner:owner requestType:kAPIClientRequestTypeCreateTicket];
+                                                     }
+                                                                                                    failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON)
+                                                     {
+                                                         
+                                                         [self processError:error andResponse:JSON forOwner:owner requestType:kAPIClientRequestTypeCreateTicket];
+                                                         
+                                                     }];
+    
+    
+    [[ZodioAPIClient sharedClient] enqueueHTTPRequestOperation:loginRequestOperation forOwner:owner];
+    
+}
 @end

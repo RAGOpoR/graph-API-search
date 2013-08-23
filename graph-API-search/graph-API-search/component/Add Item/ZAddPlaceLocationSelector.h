@@ -27,6 +27,7 @@
 
 @property (strong, nonatomic) UIButton *recenterMapButton;
 @property (nonatomic) BOOL mapFocusedOnUserLocation;
+@property (nonatomic, strong) UITextView *textInput;
 
 - (void)mapTapped:(UIGestureRecognizer*)gestureRecognizer;
 - (void)mapPanned:(UIGestureRecognizer*)gestureRecognizer;

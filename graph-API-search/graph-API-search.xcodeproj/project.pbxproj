@@ -168,9 +168,6 @@
 		A6C0E96C17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0E96A17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo@2x.png */; };
 		A6C0E96F17C7DBD900DB1182 /* plusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0E96D17C7DBD900DB1182 /* plusIcon.png */; };
 		A6C0E97017C7DBD900DB1182 /* plusIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0E96E17C7DBD900DB1182 /* plusIcon@2x.png */; };
-		A6C0E97717C7E1CC00DB1182 /* ZAddPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E97517C7E1CC00DB1182 /* ZAddPlaceViewController.m */; };
-		A6C0E97817C7E1CC00DB1182 /* ZAddPlaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C0E97617C7E1CC00DB1182 /* ZAddPlaceViewController.xib */; };
-		A6C0E97B17C7E31700DB1182 /* ZAddPlaceLocationSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E97A17C7E31700DB1182 /* ZAddPlaceLocationSelector.m */; };
 		A6C0E99117C7E3F300DB1182 /* PrettyCustomViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E97F17C7E3F300DB1182 /* PrettyCustomViewTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A6C0E99217C7E3F300DB1182 /* PrettyGridTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E98117C7E3F300DB1182 /* PrettyGridTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A6C0E99317C7E3F300DB1182 /* PrettySegmentedControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E98317C7E3F300DB1182 /* PrettySegmentedControlTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -193,6 +190,9 @@
 		A6D5223117C7D519000C7770 /* ZNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D5223017C7D519000C7770 /* ZNavigationBar.m */; };
 		A6D5223417C7D5BB000C7770 /* UIColor+DFTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D5223317C7D5BB000C7770 /* UIColor+DFTheme.m */; };
 		A6D5223517C7D5EC000C7770 /* UIColor+DFTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D5223317C7D5BB000C7770 /* UIColor+DFTheme.m */; };
+		A6E8D1C817C7F161004BAEA3 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E8D1C617C7F161004BAEA3 /* AddItemViewController.m */; };
+		A6E8D1C917C7F161004BAEA3 /* AddItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E8D1C717C7F161004BAEA3 /* AddItemViewController.xib */; };
+		A6E8D1CC17C81181004BAEA3 /* ZAddPlaceLocationSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E97A17C7E31700DB1182 /* ZAddPlaceLocationSelector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -485,6 +485,9 @@
 		A6D5223017C7D519000C7770 /* ZNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNavigationBar.m; sourceTree = "<group>"; };
 		A6D5223217C7D5BB000C7770 /* UIColor+DFTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+DFTheme.h"; path = "Category/UIColor+DFTheme.h"; sourceTree = "<group>"; };
 		A6D5223317C7D5BB000C7770 /* UIColor+DFTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+DFTheme.m"; path = "Category/UIColor+DFTheme.m"; sourceTree = "<group>"; };
+		A6E8D1C517C7F161004BAEA3 /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
+		A6E8D1C617C7F161004BAEA3 /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
+		A6E8D1C717C7F161004BAEA3 /* AddItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddItemViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1144,6 +1147,9 @@
 				A6C0E97417C7E1CC00DB1182 /* ZAddPlaceViewController.h */,
 				A6C0E97517C7E1CC00DB1182 /* ZAddPlaceViewController.m */,
 				A6C0E97617C7E1CC00DB1182 /* ZAddPlaceViewController.xib */,
+				A6E8D1C517C7F161004BAEA3 /* AddItemViewController.h */,
+				A6E8D1C617C7F161004BAEA3 /* AddItemViewController.m */,
+				A6E8D1C717C7F161004BAEA3 /* AddItemViewController.xib */,
 			);
 			path = "Add Item";
 			sourceTree = "<group>";
@@ -1338,7 +1344,7 @@
 				A6C0E96C17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo@2x.png in Resources */,
 				A6C0E96F17C7DBD900DB1182 /* plusIcon.png in Resources */,
 				A6C0E97017C7DBD900DB1182 /* plusIcon@2x.png in Resources */,
-				A6C0E97817C7E1CC00DB1182 /* ZAddPlaceViewController.xib in Resources */,
+				A6E8D1C917C7F161004BAEA3 /* AddItemViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1441,8 +1447,6 @@
 				A6D5222D17C7C799000C7770 /* ItemListCell.m in Sources */,
 				A6D5223117C7D519000C7770 /* ZNavigationBar.m in Sources */,
 				A6D5223517C7D5EC000C7770 /* UIColor+DFTheme.m in Sources */,
-				A6C0E97717C7E1CC00DB1182 /* ZAddPlaceViewController.m in Sources */,
-				A6C0E97B17C7E31700DB1182 /* ZAddPlaceLocationSelector.m in Sources */,
 				A6C0E99117C7E3F300DB1182 /* PrettyCustomViewTableViewCell.m in Sources */,
 				A6C0E99217C7E3F300DB1182 /* PrettyGridTableViewCell.m in Sources */,
 				A6C0E99317C7E3F300DB1182 /* PrettySegmentedControlTableViewCell.m in Sources */,
@@ -1452,6 +1456,8 @@
 				A6C0E99717C7E3F300DB1182 /* PrettyShadowPlainTableview.m in Sources */,
 				A6C0E99817C7E3F300DB1182 /* PrettyTabBar.m in Sources */,
 				A6C0E99917C7E3F300DB1182 /* PrettyToolbar.m in Sources */,
+				A6E8D1C817C7F161004BAEA3 /* AddItemViewController.m in Sources */,
+				A6E8D1CC17C81181004BAEA3 /* ZAddPlaceLocationSelector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -50,17 +50,23 @@
     instructionViewLabel.font = [UIFont boldSystemFontOfSize:13];
     [instructionViewLabel setText:NSLocalizedString(@"Tap the map to select a location",@"suggestion word Tap the map for select a location")];
     
+    _textInput = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 320, 45)];//[[UITextField alloc] initWithFrame:CGRectMake(100, 100, 320, 30)];
+    _textInput.delegate = self;
+    
+    
     recenterMapButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [recenterMapButton setBackgroundImage:[UIImage imageNamed:@"RecenterMap.png"] forState:UIControlStateNormal];
     [recenterMapButton setFrame:CGRectMake(285, 5, 31, 31)];
     [recenterMapButton addTarget:self action:@selector(recenterMap:) forControlEvents:UIControlEventTouchUpInside];
 //    CGRect screenBound = [[UIScreen mainScreen] bounds];
 //    CGFloat expectScreenHeight = screenBound.size.height - kSumOfStatusBarAndNavigationBarAndTabBar;
-    self.locationSelectorMapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height)];
+    self.locationSelectorMapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
     [self.view addSubview:self.locationSelectorMapView];
     [self.view addSubview:instructionView];
     [self.view addSubview:instructionViewLabel];
+    [self.view addSubview:_textInput];
     [self.view addSubview:recenterMapButton];
+    
     
     if (locationSelected == YES)
     {
@@ -101,6 +107,12 @@
     
     [self.locationSelectorMapView addGestureRecognizer:self.mapTapRecognizer];
     [self.locationSelectorMapView addGestureRecognizer:self.mapPanRecognizer];
+    
+    [self setupNextButtonWithImageName:@"plusIcon.png" andHilightedImageName:@"plusIcon-hl.png" withImageWidth:36 andImageHeight:32];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:@"UITextFieldTextDidChangeNotification" object:nil];
+    
+    [self setupLeftCancelButtonItem];
 }
 
 - (void)didReceiveMemoryWarning
@@ -112,7 +124,7 @@
 - (void)mapTapped:(UIGestureRecognizer*)gestureRecognizer
 {
 
-        DDLogVerbose(@"Map tapped");
+        //DDLogVerbose(@"Map tapped");
     
     for (id <MKAnnotation> currentAnnotation in self.locationSelectorMapView.annotations)
     {
@@ -165,4 +177,40 @@
     return YES;
 }
 
+- (void)dismissView:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
+- (void)nextButtonPress {
+    NSString *latAndLongAsString = [NSString stringWithFormat:@"%f,%f",self.selectedLocation.latitude,self.selectedLocation.longitude];
+    [SVProgressHUD showWithStatus:@"Posting..."];
+    [[ZodioAPIClient sharedClient] createTicketWithString:_textInput.text andLocation:latAndLongAsString forOwner:(id<ZodioAPIClientDelegate>)self];
+}
+
+#pragma mark APIClient
+
+- (void)requestCompletedWithStatus:(NSInteger)status andResults:(NSMutableDictionary *)results requestType:(NSString *)requestType {
+    
+    if (status == StatusOK) {
+        if ([requestType isEqualToString:kAPIClientRequestTypeCreateTicket]) {
+            [SVProgressHUD showSuccessWithStatus:@"Done!!"];
+            //            [self.dataSource processJSONArray:[results objectForKey:@"data"]];
+            //            [self.tableView reloadData];
+            [self dismissViewControllerAnimated:YES completion:^{
+                
+            }];
+        }
+        
+    }
+    else if (status == StatusNoResultsError) {
+        [SVProgressHUD dismiss];
+    }
+}
+
+- (void)requestType:(NSString *)request failedWithError:(NSError *)error andData:(id)JSON {
+    [SVProgressHUD showErrorWithStatus:@"Failed"];
+}
 @end
