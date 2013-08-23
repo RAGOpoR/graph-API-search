@@ -43,5 +43,7 @@
  */
 - (void)showLoginPage;
 
+- (void)setupNextButtonWithImageName:(NSString*)defaultImageName andHilightedImageName:(NSString*)hilightedImageName withImageWidth:(float)width andImageHeight:(float)height;
+- (void)setupLeftCancelButtonItem;
 
 @end

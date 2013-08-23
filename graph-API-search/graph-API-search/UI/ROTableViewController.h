@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZViewController.h"
 
 @class ROTableViewDataSource;
 @interface ROTableViewController : ZViewController <UITableViewDelegate> {
@@ -19,4 +18,5 @@
 @property (strong, nonatomic) ROTableViewDataSource *dataSource;
 
 - (void)setupTableViewWithStyle:(UITableViewStyle)style;
+
 @end

@@ -166,6 +166,20 @@
 		A69B545C17C7974F007DA87C /* ZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B544817C77275007DA87C /* ZViewController.m */; };
 		A6C0E96B17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0E96917C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo.png */; };
 		A6C0E96C17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0E96A17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo@2x.png */; };
+		A6C0E96F17C7DBD900DB1182 /* plusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0E96D17C7DBD900DB1182 /* plusIcon.png */; };
+		A6C0E97017C7DBD900DB1182 /* plusIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0E96E17C7DBD900DB1182 /* plusIcon@2x.png */; };
+		A6C0E97717C7E1CC00DB1182 /* ZAddPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E97517C7E1CC00DB1182 /* ZAddPlaceViewController.m */; };
+		A6C0E97817C7E1CC00DB1182 /* ZAddPlaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C0E97617C7E1CC00DB1182 /* ZAddPlaceViewController.xib */; };
+		A6C0E97B17C7E31700DB1182 /* ZAddPlaceLocationSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E97A17C7E31700DB1182 /* ZAddPlaceLocationSelector.m */; };
+		A6C0E99117C7E3F300DB1182 /* PrettyCustomViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E97F17C7E3F300DB1182 /* PrettyCustomViewTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6C0E99217C7E3F300DB1182 /* PrettyGridTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E98117C7E3F300DB1182 /* PrettyGridTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6C0E99317C7E3F300DB1182 /* PrettySegmentedControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E98317C7E3F300DB1182 /* PrettySegmentedControlTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6C0E99417C7E3F300DB1182 /* PrettyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E98517C7E3F300DB1182 /* PrettyTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6C0E99517C7E3F300DB1182 /* PrettyDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E98717C7E3F300DB1182 /* PrettyDrawing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6C0E99617C7E3F300DB1182 /* PrettyNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E98A17C7E3F300DB1182 /* PrettyNavigationBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6C0E99717C7E3F300DB1182 /* PrettyShadowPlainTableview.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E98C17C7E3F300DB1182 /* PrettyShadowPlainTableview.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6C0E99817C7E3F300DB1182 /* PrettyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E98E17C7E3F300DB1182 /* PrettyTabBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6C0E99917C7E3F300DB1182 /* PrettyToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E99017C7E3F300DB1182 /* PrettyToolbar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A6D256BD17C74F3E0050650D /* ROFacebookCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D256BC17C74F3E0050650D /* ROFacebookCredential.m */; };
 		A6D256BF17C751C40050650D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D256BE17C751C40050650D /* FacebookSDK.framework */; };
 		A6D256C017C751C40050650D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D256BE17C751C40050650D /* FacebookSDK.framework */; };
@@ -430,6 +444,32 @@
 		A69B545117C77B82007DA87C /* JBKenBurnsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBKenBurnsView.m; sourceTree = "<group>"; };
 		A6C0E96917C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home_TopBar_RoundCorner_withLogo.png; sourceTree = "<group>"; };
 		A6C0E96A17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home_TopBar_RoundCorner_withLogo@2x.png"; sourceTree = "<group>"; };
+		A6C0E96D17C7DBD900DB1182 /* plusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plusIcon.png; sourceTree = "<group>"; };
+		A6C0E96E17C7DBD900DB1182 /* plusIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plusIcon@2x.png"; sourceTree = "<group>"; };
+		A6C0E97417C7E1CC00DB1182 /* ZAddPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAddPlaceViewController.h; sourceTree = "<group>"; };
+		A6C0E97517C7E1CC00DB1182 /* ZAddPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAddPlaceViewController.m; sourceTree = "<group>"; };
+		A6C0E97617C7E1CC00DB1182 /* ZAddPlaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZAddPlaceViewController.xib; sourceTree = "<group>"; };
+		A6C0E97917C7E31700DB1182 /* ZAddPlaceLocationSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAddPlaceLocationSelector.h; sourceTree = "<group>"; };
+		A6C0E97A17C7E31700DB1182 /* ZAddPlaceLocationSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAddPlaceLocationSelector.m; sourceTree = "<group>"; };
+		A6C0E97E17C7E3F300DB1182 /* PrettyCustomViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyCustomViewTableViewCell.h; sourceTree = "<group>"; };
+		A6C0E97F17C7E3F300DB1182 /* PrettyCustomViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyCustomViewTableViewCell.m; sourceTree = "<group>"; };
+		A6C0E98017C7E3F300DB1182 /* PrettyGridTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyGridTableViewCell.h; sourceTree = "<group>"; };
+		A6C0E98117C7E3F300DB1182 /* PrettyGridTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyGridTableViewCell.m; sourceTree = "<group>"; };
+		A6C0E98217C7E3F300DB1182 /* PrettySegmentedControlTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettySegmentedControlTableViewCell.h; sourceTree = "<group>"; };
+		A6C0E98317C7E3F300DB1182 /* PrettySegmentedControlTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettySegmentedControlTableViewCell.m; sourceTree = "<group>"; };
+		A6C0E98417C7E3F300DB1182 /* PrettyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyTableViewCell.h; sourceTree = "<group>"; };
+		A6C0E98517C7E3F300DB1182 /* PrettyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyTableViewCell.m; sourceTree = "<group>"; };
+		A6C0E98617C7E3F300DB1182 /* PrettyDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyDrawing.h; sourceTree = "<group>"; };
+		A6C0E98717C7E3F300DB1182 /* PrettyDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyDrawing.m; sourceTree = "<group>"; };
+		A6C0E98817C7E3F300DB1182 /* PrettyKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyKit.h; sourceTree = "<group>"; };
+		A6C0E98917C7E3F300DB1182 /* PrettyNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyNavigationBar.h; sourceTree = "<group>"; };
+		A6C0E98A17C7E3F300DB1182 /* PrettyNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyNavigationBar.m; sourceTree = "<group>"; };
+		A6C0E98B17C7E3F300DB1182 /* PrettyShadowPlainTableview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyShadowPlainTableview.h; sourceTree = "<group>"; };
+		A6C0E98C17C7E3F300DB1182 /* PrettyShadowPlainTableview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyShadowPlainTableview.m; sourceTree = "<group>"; };
+		A6C0E98D17C7E3F300DB1182 /* PrettyTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyTabBar.h; sourceTree = "<group>"; };
+		A6C0E98E17C7E3F300DB1182 /* PrettyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyTabBar.m; sourceTree = "<group>"; };
+		A6C0E98F17C7E3F300DB1182 /* PrettyToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyToolbar.h; sourceTree = "<group>"; };
+		A6C0E99017C7E3F300DB1182 /* PrettyToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyToolbar.m; sourceTree = "<group>"; };
 		A6D256BB17C74F3E0050650D /* ROFacebookCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFacebookCredential.h; sourceTree = "<group>"; };
 		A6D256BC17C74F3E0050650D /* ROFacebookCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFacebookCredential.m; sourceTree = "<group>"; };
 		A6D256BE17C751C40050650D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
@@ -634,6 +674,7 @@
 		A64E5401173C08720089FC37 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				A6C0E97C17C7E3F300DB1182 /* PrettyKit */,
 				A695D4A017C79A1400DF73E6 /* URLCacheAlert.h */,
 				A695D4A117C79A1400DF73E6 /* URLCacheAlert.m */,
 				A60053A217C7987C001E02DB /* UIDeviceHardware.m */,
@@ -1050,6 +1091,7 @@
 		A69B543E17C77028007DA87C /* component */ = {
 			isa = PBXGroup;
 			children = (
+				A6C0E97317C7E1CC00DB1182 /* Add Item */,
 				A6D5222E17C7D4F9000C7770 /* NavigationBar */,
 				A69B543F17C77100007DA87C /* LoginView */,
 			);
@@ -1094,6 +1136,52 @@
 			path = KenBurns;
 			sourceTree = "<group>";
 		};
+		A6C0E97317C7E1CC00DB1182 /* Add Item */ = {
+			isa = PBXGroup;
+			children = (
+				A6C0E97917C7E31700DB1182 /* ZAddPlaceLocationSelector.h */,
+				A6C0E97A17C7E31700DB1182 /* ZAddPlaceLocationSelector.m */,
+				A6C0E97417C7E1CC00DB1182 /* ZAddPlaceViewController.h */,
+				A6C0E97517C7E1CC00DB1182 /* ZAddPlaceViewController.m */,
+				A6C0E97617C7E1CC00DB1182 /* ZAddPlaceViewController.xib */,
+			);
+			path = "Add Item";
+			sourceTree = "<group>";
+		};
+		A6C0E97C17C7E3F300DB1182 /* PrettyKit */ = {
+			isa = PBXGroup;
+			children = (
+				A6C0E97D17C7E3F300DB1182 /* Cells */,
+				A6C0E98617C7E3F300DB1182 /* PrettyDrawing.h */,
+				A6C0E98717C7E3F300DB1182 /* PrettyDrawing.m */,
+				A6C0E98817C7E3F300DB1182 /* PrettyKit.h */,
+				A6C0E98917C7E3F300DB1182 /* PrettyNavigationBar.h */,
+				A6C0E98A17C7E3F300DB1182 /* PrettyNavigationBar.m */,
+				A6C0E98B17C7E3F300DB1182 /* PrettyShadowPlainTableview.h */,
+				A6C0E98C17C7E3F300DB1182 /* PrettyShadowPlainTableview.m */,
+				A6C0E98D17C7E3F300DB1182 /* PrettyTabBar.h */,
+				A6C0E98E17C7E3F300DB1182 /* PrettyTabBar.m */,
+				A6C0E98F17C7E3F300DB1182 /* PrettyToolbar.h */,
+				A6C0E99017C7E3F300DB1182 /* PrettyToolbar.m */,
+			);
+			path = PrettyKit;
+			sourceTree = "<group>";
+		};
+		A6C0E97D17C7E3F300DB1182 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A6C0E97E17C7E3F300DB1182 /* PrettyCustomViewTableViewCell.h */,
+				A6C0E97F17C7E3F300DB1182 /* PrettyCustomViewTableViewCell.m */,
+				A6C0E98017C7E3F300DB1182 /* PrettyGridTableViewCell.h */,
+				A6C0E98117C7E3F300DB1182 /* PrettyGridTableViewCell.m */,
+				A6C0E98217C7E3F300DB1182 /* PrettySegmentedControlTableViewCell.h */,
+				A6C0E98317C7E3F300DB1182 /* PrettySegmentedControlTableViewCell.m */,
+				A6C0E98417C7E3F300DB1182 /* PrettyTableViewCell.h */,
+				A6C0E98517C7E3F300DB1182 /* PrettyTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		A6D256C117C75C610050650D /* ISO8601DateFormatter */ = {
 			isa = PBXGroup;
 			children = (
@@ -1106,6 +1194,8 @@
 		A6D5221E17C7A02E000C7770 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				A6C0E96D17C7DBD900DB1182 /* plusIcon.png */,
+				A6C0E96E17C7DBD900DB1182 /* plusIcon@2x.png */,
 				A6C0E96917C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo.png */,
 				A6C0E96A17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo@2x.png */,
 				A6D5222517C7B7B0000C7770 /* BG_login.png */,
@@ -1246,6 +1336,9 @@
 				A6D5222A17C7B8DF000C7770 /* logo@2x.png in Resources */,
 				A6C0E96B17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo.png in Resources */,
 				A6C0E96C17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo@2x.png in Resources */,
+				A6C0E96F17C7DBD900DB1182 /* plusIcon.png in Resources */,
+				A6C0E97017C7DBD900DB1182 /* plusIcon@2x.png in Resources */,
+				A6C0E97817C7E1CC00DB1182 /* ZAddPlaceViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1348,6 +1441,17 @@
 				A6D5222D17C7C799000C7770 /* ItemListCell.m in Sources */,
 				A6D5223117C7D519000C7770 /* ZNavigationBar.m in Sources */,
 				A6D5223517C7D5EC000C7770 /* UIColor+DFTheme.m in Sources */,
+				A6C0E97717C7E1CC00DB1182 /* ZAddPlaceViewController.m in Sources */,
+				A6C0E97B17C7E31700DB1182 /* ZAddPlaceLocationSelector.m in Sources */,
+				A6C0E99117C7E3F300DB1182 /* PrettyCustomViewTableViewCell.m in Sources */,
+				A6C0E99217C7E3F300DB1182 /* PrettyGridTableViewCell.m in Sources */,
+				A6C0E99317C7E3F300DB1182 /* PrettySegmentedControlTableViewCell.m in Sources */,
+				A6C0E99417C7E3F300DB1182 /* PrettyTableViewCell.m in Sources */,
+				A6C0E99517C7E3F300DB1182 /* PrettyDrawing.m in Sources */,
+				A6C0E99617C7E3F300DB1182 /* PrettyNavigationBar.m in Sources */,
+				A6C0E99717C7E3F300DB1182 /* PrettyShadowPlainTableview.m in Sources */,
+				A6C0E99817C7E3F300DB1182 /* PrettyTabBar.m in Sources */,
+				A6C0E99917C7E3F300DB1182 /* PrettyToolbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

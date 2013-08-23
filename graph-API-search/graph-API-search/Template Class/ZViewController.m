@@ -162,4 +162,35 @@
     [self presentViewController:loginView animated:YES completion:nil];
 }
 
+#pragma mark right menu setting
+
+- (void) setupNextButtonWithImageName:(NSString*)defaultImageName andHilightedImageName:(NSString*)hilightedImageName withImageWidth:(float)width andImageHeight:(float)height {
+    UIButton *buttonNext = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, 0.0f, width, height)];
+    [buttonNext setImage:[UIImage imageNamed:defaultImageName] forState:UIControlStateNormal];
+    [buttonNext setImage:[UIImage imageNamed:hilightedImageName] forState:UIControlStateHighlighted];
+    [buttonNext addTarget:self action:@selector(nextButtonPress) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    UIBarButtonItem *navNextButton = [[UIBarButtonItem alloc] initWithCustomView: buttonNext];
+    [self.navigationItem setRightBarButtonItem:navNextButton];
+}
+
+- (void)setupLeftCancelButtonItem
+{
+    if (self.navigationController) {
+        if (self.navigationController.topViewController == self) {
+            UIButton *buttonBack = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 69, 32)];
+            [buttonBack setTitle:@"Cancel" forState:UIControlStateNormal];
+            [buttonBack setTitle:@"Cancel" forState:UIControlStateHighlighted];
+            [buttonBack setTitleEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 0)];
+            
+            [buttonBack addTarget:self action:@selector(dismissView:) forControlEvents:UIControlEventTouchUpInside];
+            
+            UIBarButtonItem *navBackButton = [[UIBarButtonItem alloc] initWithCustomView: buttonBack];
+            [self.navigationItem setLeftBarButtonItem:navBackButton];
+        }
+    }
+}
+
+
 @end

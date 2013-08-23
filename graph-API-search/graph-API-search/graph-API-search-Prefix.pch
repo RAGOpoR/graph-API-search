@@ -18,7 +18,7 @@
     #import "SVProgressHUD.h"
     #import <FacebookSDK/FacebookSDK.h>
     #import "UIDeviceHardware.h"
-
+    #import "ZViewController.h"
 #define kAPIBaseURLString                                   @"http://namjai.eu1.frbit.net"
 #define kAPIBasePath                                        @"/public"
 

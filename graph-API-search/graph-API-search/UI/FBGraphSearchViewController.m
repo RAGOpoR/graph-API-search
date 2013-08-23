@@ -35,7 +35,7 @@
     self.tableView.isAccessibilityElement = YES;
     self.tableView.accessibilityIdentifier = @"Item listing";
 	// Do any additional setup after loading the view.
-    
+    [self setupNextButtonWithImageName:@"plusIcon.png" andHilightedImageName:@"plusIcon-hl.png" withImageWidth:36 andImageHeight:32];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -136,4 +136,11 @@
     [SVProgressHUD showWithStatus:NSLocalizedString(@"Searching", @"Searching")];
 }
 
+#pragma mark buttons
+
+- (void)nextButtonPress{
+    //Add New Item
+//    DealfishAppDelegate *appDelegate = [DealfishAppDelegate sharedDelegate];
+//    [appDelegate gotoAddItemViewWithNavBack:true andViewController:self];
+}
 @end
