@@ -19,7 +19,7 @@ __strong static NSMutableDictionary *connectionTable = nil;
     static dispatch_once_t predicate;
     
     dispatch_once(&predicate, ^{
-        sharedZodioAPIClientInstance = [[self alloc] initWithBaseURL:[NSURL URLWithString:kAPIBasePath]];
+        sharedZodioAPIClientInstance = [[self alloc] initWithBaseURL:[NSURL URLWithString:kAPIBaseURLString]];
         connectionTable = [[NSMutableDictionary alloc] initWithCapacity:2048];
         
     });
@@ -130,6 +130,37 @@ __strong static NSMutableDictionary *connectionTable = nil;
     if ([owner respondsToSelector:@selector(requestCompletedWithStatus:andResults:requestType:)]) {
         [owner requestCompletedWithStatus:StatusUnknownError andResults:resultsToReturn requestType:requestType];
     }
+}
+
+#pragma mark Login
+
+- (void)doLoginWithToken:(NSString *)token forOwner:(id<ZodioAPIClientDelegate>)owner {
+    
+    NSString *requestPath = kAPIBasePath;
+    requestPath = [requestPath stringByAppendingString:[NSString stringWithFormat:@"%@",kLoginPath]];
+    
+    NSMutableDictionary *loginParameter = [[NSMutableDictionary alloc] init];
+    [loginParameter setObject:@"saakyz@gmail.com" forKey:@"email"];
+    [loginParameter setObject:@"n3tr" forKey:@"username"];
+    [loginParameter setObject:@"21345o34567899765thsdfgdsasrgfdcvtfbcv4" forKey:@"device_token"];
+
+    
+    NSMutableURLRequest *photosRequest = [[ZodioAPIClient sharedClient] requestWithMethod:@"GET" path:requestPath parameters:loginParameter];
+    
+    AFJSONRequestOperation *loginRequestOperation = [AFJSONRequestOperation JSONRequestOperationWithRequest:photosRequest success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON)
+                                                      {
+                                                          [self processListData:JSON withFields:nil forOwner:owner requestType:kAPIClientRequestTypeFacebook];
+                                                      }
+                                                                                                     failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON)
+                                                      {
+                                                          
+                                                          [self processError:error andResponse:JSON forOwner:owner requestType:kAPIClientRequestTypeFacebook];
+                                                          
+                                                      }];
+    
+    
+    [[ZodioAPIClient sharedClient] enqueueHTTPRequestOperation:loginRequestOperation forOwner:owner];
+    
 }
 
 @end

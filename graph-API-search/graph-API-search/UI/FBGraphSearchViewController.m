@@ -33,7 +33,7 @@
     self.tableView.dataSource = self.dataSource;
     
     self.tableView.isAccessibilityElement = YES;
-    self.tableView.accessibilityIdentifier = @"FBGraphSearch list";
+    self.tableView.accessibilityIdentifier = @"Item listing";
 	// Do any additional setup after loading the view.
     
 }
@@ -128,7 +128,7 @@
                                                                                                     NULL,
                                                                                                     CFSTR("!*'();:@&=+$,/?%#[]"),
                                                                                                     kCFStringEncodingUTF8));
-    NSLog(@"%@",escapedString);
+//    NSLog(@"%@",escapedString);
     [[ZodioAPIClient sharedClient] facebookGraphSearchForKeyword:escapedString
                                                         withPage:0
                                                         andLimit:0

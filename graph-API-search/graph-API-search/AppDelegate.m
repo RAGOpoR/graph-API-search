@@ -12,6 +12,7 @@
 #import "UAirship.h"
 #import "UAConfig.h"
 #import "UAPush.h"
+#import "ZNavigationBar.h"
 
 @implementation AppDelegate
 
@@ -39,6 +40,11 @@
     
     self.viewController = [[FBGraphSearchViewController alloc] initWithNibName:nil bundle:nil];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    ZNavigationBar *navBar = (ZNavigationBar *)[self.navigationController navigationBar];
+//    [navBar setTintColor:kZodioColorBlue];
+    [navBar setBackgroundImage:[UIImage imageNamed:@"Home_TopBar_RoundCorner_withLogo"] forBarMetrics:UIBarMetricsDefault];
+    
+    
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     

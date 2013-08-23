@@ -43,4 +43,5 @@ typedef enum {
 + (ZodioAPIClient *)sharedClient;
 + (NSMutableDictionary *)connectionTable;
 - (void)facebookGraphSearchForKeyword:(NSString *)keyword withPage:(NSInteger)page andLimit:(NSInteger)limit forOwner:(id<ZodioAPIClientDelegate>)owner;
+- (void)doLoginWithToken:(NSString *)token forOwner:(id<ZodioAPIClientDelegate>)owner;
 @end

@@ -140,7 +140,7 @@
 //        self.loginForegroundViewResetPassword.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"16first-page_blank-background.png"]];
     }
     
-    NSArray *photos = [NSArray arrayWithObject:[UIImage imageNamed:@"image001.jpg"]];
+    NSArray *photos = [NSArray arrayWithObject:[UIImage imageNamed:@"BG_login.png"]];
     [self.animatedBackgroundView animateWithImages:photos transitionDuration:60 loop:YES isLandscape:YES];
     
     [self.view addSubview:self.loginForegroundViewFacebookSSO];
@@ -500,6 +500,9 @@
 - (IBAction)doFacebookLogin:(id)sender
 {
     NSLog(@"Do a Login");
+//    http://namjai.eu1.frbit.net/public/auth/login
+    [SVProgressHUD showWithStatus:@"Loging In"];
+    [[ZodioAPIClient sharedClient] doLoginWithToken:nil forOwner:self];
 //    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
 //    [[JGZodioCurrentUser currentUser] clearUserData];
 //    NSLog(@"Calling awesome session opener");
@@ -731,23 +734,14 @@
 }
 
 - (void)requestCompletedWithStatus:(NSInteger)statusOK andResults:(NSMutableDictionary *)value requestType:(NSString *)requestType {
-    if (statusOK) {
-        
-        NSLog(@"ofLogin_FAILED");
-        NSLog(@"ofLogin = %@",value);//message
-        //^_^ Error MSG
-        NSString *message = [value valueForKey:@"message"];
-        if (message&&[message isKindOfClass:[NSString class]]&&message.length>4) {
-//            URLCacheAlertWithMessage([value valueForKey:@"message"]);
-        }else{
-//            URLCacheAlertWithMessage(K_MSG_TIMEOUT);
-        }
-        return;
+    if ([requestType isEqual: kAPIClientRequestTypeFacebook] && statusOK == StatusOK) {
+        [SVProgressHUD showSuccessWithStatus:@"Login Success!"];
+       [self dismiss];
     }
-    NSString *message = [value valueForKey:@"message"];
-    if (message&&[message isKindOfClass:[NSString class]]&&message.length>4) {
-//        URLCacheAlertWithMessage([value valueForKey:@"message"]);
+    else {
+        [SVProgressHUD showErrorWithStatus:@"Login Failed!"];        
     }
+
 }
 
 - (void)requestType:(NSString *)request failedWithError:(NSError *)error andData:(id)JSON

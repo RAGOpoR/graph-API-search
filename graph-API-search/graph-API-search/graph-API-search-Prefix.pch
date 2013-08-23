@@ -18,7 +18,10 @@
     #import "SVProgressHUD.h"
     #import <FacebookSDK/FacebookSDK.h>
     #import "UIDeviceHardware.h"
-#define kAPIBasePath                                        @"https://graph.facebook.com/"
+
+#define kAPIBaseURLString                                   @"http://namjai.eu1.frbit.net"
+#define kAPIBasePath                                        @"/public"
+
 #define kZodioAPIClientRequestTypeGetFacebookGraphSearch    @"facebookgraphsearch"
 #define kSumOfStatusBarAndNavigationBarAndTabBar            113
 #define kStatusBarHeight                20
@@ -35,5 +38,8 @@
 #define kFacebookFullNameFieldName  @"name"
 #define kFacebookUserThumbnailURLFieldName  @"pic_square"
 #define kAccessTokenFieldName   @"access_token"
+
+#define kLoginPath                                          @"/auth/login"
+#define kAPIClientRequestTypeFacebook                       @"facebookLogin"
 
 #endif

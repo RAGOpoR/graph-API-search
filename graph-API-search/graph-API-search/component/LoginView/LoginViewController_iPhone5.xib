@@ -357,8 +357,8 @@
 					</object>
 					<object class="IBUIImageView" id="698330151">
 						<reference key="NSNextResponder" ref="215326495"/>
-						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{36, 210}, {248, 180}}</string>
+						<int key="NSvFlags">256</int>
+						<string key="NSFrame">{{68, 117}, {183, 234}}</string>
 						<reference key="NSSuperview" ref="215326495"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="660502659"/>
@@ -372,7 +372,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">08first-page_box.png</string>
+							<string key="NSResourceName">logo.png</string>
 						</object>
 					</object>
 					<object class="IBUILabel" id="660502659">
@@ -381,7 +381,7 @@
 						<string key="NSFrame">{{42, 218}, {234, 21}}</string>
 						<reference key="NSSuperview" ref="215326495"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="354174244"/>
+						<reference key="NSNextKeyView" ref="76062477"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIAutoresizesSubviews">NO</bool>
@@ -447,10 +447,10 @@
 					<object class="IBUIButton" id="354174244">
 						<reference key="NSNextResponder" ref="215326495"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{43, 262}, {233, 39}}</string>
+						<string key="NSFrame">{{43, 357}, {233, 39}}</string>
 						<reference key="NSSuperview" ref="215326495"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="76062477"/>
+						<reference key="NSNextKeyView" ref="840117415"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIAutoresizesSubviews">NO</bool>
@@ -502,7 +502,7 @@
 						<string key="NSFrame">{{43, 305}, {233, 39}}</string>
 						<reference key="NSSuperview" ref="215326495"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="840117415"/>
+						<reference key="NSNextKeyView" ref="354174244"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -1508,7 +1508,6 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="07first-page_facebook-icon_active.png">{233, 39}</string>
-			<string key="08first-page_box.png">{248, 180}</string>
 			<string key="10log-in_box.png">{248, 291}</string>
 			<string key="14reset-password_box.png">{248, 169}</string>
 			<string key="17first-page_logo.png">{201, 64}</string>
@@ -1521,6 +1520,7 @@
 			<string key="FirstPage_SignUp.png">{114, 39}</string>
 			<string key="FirstPage_SignUp_selected.png">{114, 39}</string>
 			<string key="FirstPage_Twitter_btn_selected.png">{233, 39}</string>
+			<string key="logo.png">{183, 234}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">2083</string>
 	</data>
