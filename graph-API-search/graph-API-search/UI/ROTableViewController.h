@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZViewController.h"
 
 @class ROTableViewDataSource;
-@interface ROTableViewController : UIViewController <UITableViewDelegate> {
+@interface ROTableViewController : ZViewController <UITableViewDelegate> {
     UITableView *_tableView;
     ROTableViewDataSource *_dataSource;
 }

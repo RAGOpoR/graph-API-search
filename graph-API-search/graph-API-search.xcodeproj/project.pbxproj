@@ -169,6 +169,8 @@
 		A6D256C017C751C40050650D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D256BE17C751C40050650D /* FacebookSDK.framework */; };
 		A6D256C617C75C610050650D /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D256C317C75C610050650D /* ISO8601DateFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A6D256C717C75C610050650D /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D256C317C75C610050650D /* ISO8601DateFormatter.m */; };
+		A6D5222017C7A17F000C7770 /* login_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6D5221F17C7A17F000C7770 /* login_background.jpg */; };
+		A6D5222217C7A26A000C7770 /* image001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6D5222117C7A26A000C7770 /* image001.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -423,6 +425,8 @@
 		A6D256BE17C751C40050650D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		A6D256C217C75C610050650D /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
 		A6D256C317C75C610050650D /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
+		A6D5221F17C7A17F000C7770 /* login_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login_background.jpg; sourceTree = "<group>"; };
+		A6D5222117C7A26A000C7770 /* image001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image001.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -515,6 +519,7 @@
 		A64E53BC173BFE210089FC37 /* graph-API-search */ = {
 			isa = PBXGroup;
 			children = (
+				A6D5221E17C7A02E000C7770 /* Image */,
 				A69B543E17C77028007DA87C /* component */,
 				A65E3B3517C74BCC00B6FC8C /* External Service */,
 				A64E544E173C2A160089FC37 /* Category */,
@@ -1075,6 +1080,15 @@
 			path = ISO8601DateFormatter;
 			sourceTree = "<group>";
 		};
+		A6D5221E17C7A02E000C7770 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				A6D5221F17C7A17F000C7770 /* login_background.jpg */,
+				A6D5222117C7A26A000C7770 /* image001.jpg */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1190,6 +1204,8 @@
 				A69B543A17C76AA6007DA87C /* AirshipConfig.plist in Resources */,
 				A69B544517C77100007DA87C /* LoginViewController.xib in Resources */,
 				A69B544617C77100007DA87C /* LoginViewController_iPhone5.xib in Resources */,
+				A6D5222017C7A17F000C7770 /* login_background.jpg in Resources */,
+				A6D5222217C7A26A000C7770 /* image001.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -42,10 +42,10 @@
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     
-//    if (![ROCurrentUser currentUser].userID)
-//    {
-//        [self showLoginPage];
-//    }
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:kAccessTokenFieldName])
+    {
+        [self.viewController showLoginPage];
+    }
     
     
     return YES;

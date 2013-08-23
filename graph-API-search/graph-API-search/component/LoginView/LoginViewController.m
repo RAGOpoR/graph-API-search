@@ -140,7 +140,7 @@
 //        self.loginForegroundViewResetPassword.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"16first-page_blank-background.png"]];
     }
     
-    NSArray *photos = [NSArray arrayWithObject:[UIImage imageNamed:@"login_background.jpg"]];
+    NSArray *photos = [NSArray arrayWithObject:[UIImage imageNamed:@"image001.jpg"]];
     [self.animatedBackgroundView animateWithImages:photos transitionDuration:60 loop:YES isLandscape:YES];
     
     [self.view addSubview:self.loginForegroundViewFacebookSSO];
@@ -499,6 +499,7 @@
 
 - (IBAction)doFacebookLogin:(id)sender
 {
+    NSLog(@"Do a Login");
 //    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
 //    [[JGZodioCurrentUser currentUser] clearUserData];
 //    NSLog(@"Calling awesome session opener");

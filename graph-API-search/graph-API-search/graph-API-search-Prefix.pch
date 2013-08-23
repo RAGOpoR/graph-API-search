@@ -34,6 +34,6 @@
 #define kFacebookUsernameFieldName  @"username"
 #define kFacebookFullNameFieldName  @"name"
 #define kFacebookUserThumbnailURLFieldName  @"pic_square"
-
+#define kAccessTokenFieldName   @"access_token"
 
 #endif
