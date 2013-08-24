@@ -9,6 +9,7 @@
 #import "FacebookResultCellFactory.h"
 #import "FacebookResultCell.h"
 #import "ROObject.h"
+
 #define kfacebookCellHeight 50
 
 @implementation FacebookResultCellFactory

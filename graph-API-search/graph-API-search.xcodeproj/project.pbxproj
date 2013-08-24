@@ -164,6 +164,9 @@
 		A69B545417C77B82007DA87C /* JBKenBurnsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B545117C77B82007DA87C /* JBKenBurnsView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A69B545B17C794D5007DA87C /* UIView+Alignment.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B544C17C778C6007DA87C /* UIView+Alignment.m */; };
 		A69B545C17C7974F007DA87C /* ZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B544817C77275007DA87C /* ZViewController.m */; };
+		A6B1261317C84C18007AB9D3 /* UserPlaceholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B1261117C84C18007AB9D3 /* UserPlaceholder@2x.png */; };
+		A6B1261417C84C18007AB9D3 /* UserPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B1261217C84C18007AB9D3 /* UserPlaceholder.png */; };
+		A6B1261617C850D9007AB9D3 /* ItemListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B1261517C850D9007AB9D3 /* ItemListCell.xib */; };
 		A6C0E96B17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0E96917C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo.png */; };
 		A6C0E96C17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0E96A17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo@2x.png */; };
 		A6C0E96F17C7DBD900DB1182 /* plusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0E96D17C7DBD900DB1182 /* plusIcon.png */; };
@@ -442,6 +445,9 @@
 		A69B544C17C778C6007DA87C /* UIView+Alignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Alignment.m"; sourceTree = "<group>"; };
 		A69B545017C77B82007DA87C /* JBKenBurnsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBKenBurnsView.h; sourceTree = "<group>"; };
 		A69B545117C77B82007DA87C /* JBKenBurnsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBKenBurnsView.m; sourceTree = "<group>"; };
+		A6B1261117C84C18007AB9D3 /* UserPlaceholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UserPlaceholder@2x.png"; sourceTree = "<group>"; };
+		A6B1261217C84C18007AB9D3 /* UserPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserPlaceholder.png; sourceTree = "<group>"; };
+		A6B1261517C850D9007AB9D3 /* ItemListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItemListCell.xib; path = UI/ItemListCell.xib; sourceTree = "<group>"; };
 		A6C0E96917C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home_TopBar_RoundCorner_withLogo.png; sourceTree = "<group>"; };
 		A6C0E96A17C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home_TopBar_RoundCorner_withLogo@2x.png"; sourceTree = "<group>"; };
 		A6C0E96D17C7DBD900DB1182 /* plusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plusIcon.png; sourceTree = "<group>"; };
@@ -743,6 +749,7 @@
 				A64E543E173C20210089FC37 /* FacebookResultCell.m */,
 				A6D5222B17C7C798000C7770 /* ItemListCell.h */,
 				A6D5222C17C7C799000C7770 /* ItemListCell.m */,
+				A6B1261517C850D9007AB9D3 /* ItemListCell.xib */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -1200,6 +1207,8 @@
 		A6D5221E17C7A02E000C7770 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				A6B1261117C84C18007AB9D3 /* UserPlaceholder@2x.png */,
+				A6B1261217C84C18007AB9D3 /* UserPlaceholder.png */,
 				A6C0E96D17C7DBD900DB1182 /* plusIcon.png */,
 				A6C0E96E17C7DBD900DB1182 /* plusIcon@2x.png */,
 				A6C0E96917C7D83700DB1182 /* Home_TopBar_RoundCorner_withLogo.png */,
@@ -1345,6 +1354,9 @@
 				A6C0E96F17C7DBD900DB1182 /* plusIcon.png in Resources */,
 				A6C0E97017C7DBD900DB1182 /* plusIcon@2x.png in Resources */,
 				A6E8D1C917C7F161004BAEA3 /* AddItemViewController.xib in Resources */,
+				A6B1261317C84C18007AB9D3 /* UserPlaceholder@2x.png in Resources */,
+				A6B1261417C84C18007AB9D3 /* UserPlaceholder.png in Resources */,
+				A6B1261617C850D9007AB9D3 /* ItemListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

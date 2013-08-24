@@ -11,6 +11,7 @@
 #import "FacebookResultCellFactory.h"
 #import "ROObject.h"
 #import "ROObjectFactory.h"
+#import "ItemListCell.h"
 
 static NSString *facebookCellIdentifier = @"fbsearchcell";
 
@@ -53,16 +54,20 @@ static NSString *facebookCellIdentifier = @"fbsearchcell";
     
 }
 
-- (FacebookResultCell *)drawCellWith:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (ItemListCell *)drawCellWith:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    FacebookResultCell *facebookCellToReturn = (FacebookResultCell*)[tableView dequeueReusableCellWithIdentifier:facebookCellIdentifier];
+    ItemListCell *facebookCellToReturn = (ItemListCell*)[tableView dequeueReusableCellWithIdentifier:facebookCellIdentifier];
     if (facebookCellToReturn == nil) {
-        facebookCellToReturn = [[FacebookResultCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:facebookCellIdentifier];
-        [facebookCellToReturn setSelectionStyle:UITableViewCellSelectionStyleNone];
+//        facebookCellToReturn = [[ItemListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:facebookCellIdentifier];
+//        [facebookCellToReturn setSelectionStyle:UITableViewCellSelectionStyleNone];
+        
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"ItemListCell" owner:self options:nil];
+        // Grab a pointer to the first object (presumably the custom cell, as that's all the XIB should contain).
+        facebookCellToReturn = [topLevelObjects objectAtIndex:0];
     }
     ROObject *currentObject = [self.objectArray objectAtIndex:indexPath.row];
     
-    facebookCellToReturn = [FacebookResultCellFactory createfacebookCellWithCell:facebookCellToReturn feedItem:currentObject];
+//    facebookCellToReturn = [FacebookResultCellFactory createfacebookCellWithCell:facebookCellToReturn feedItem:currentObject];
     facebookCellToReturn.tag = indexPath.section;
     
     return facebookCellToReturn;

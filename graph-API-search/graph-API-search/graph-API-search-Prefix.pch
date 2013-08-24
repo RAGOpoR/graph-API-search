@@ -42,7 +42,9 @@
 
 #define kLoginPath                                          @"/auth/login"
 #define kCreateEvents                                       @"/event/create"
+#define kGetActivityFeed                                    @"/events"
 #define kAPIClientRequestTypeFacebook                       @"facebookLogin"
 #define kAPIClientRequestTypeCreateTicket                   @"createTicket"
+#define kAPIClientRequestTypeGetActivityFeed                @"activityFeed"
 
 #endif

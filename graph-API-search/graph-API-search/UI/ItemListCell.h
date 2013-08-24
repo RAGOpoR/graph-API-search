@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ItemListCell : UITableViewCell
+@interface ItemListCell : UITableViewCell {
+    UIImageView *_imageViewIcon;
+    UILabel *_messageLabel;
+    UILabel *_name;
+    UILabel *_createTime;
+}
+
+@property (nonatomic, strong) IBOutlet UIImageView *imageViewIcon;
+@property (nonatomic, strong) IBOutlet UILabel *messageLabel;
+@property (nonatomic, strong) IBOutlet UILabel *name;
+@property (nonatomic, strong) IBOutlet UILabel *createTime;
 
 @end

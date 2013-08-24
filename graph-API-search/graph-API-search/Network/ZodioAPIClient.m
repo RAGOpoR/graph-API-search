@@ -121,6 +121,33 @@ __strong static NSMutableDictionary *connectionTable = nil;
     
 }
 
+-(void)processArrayData:(id)JSON withFields:(NSArray *)fields forOwner:(id)owner requestType:(NSString *)requestType {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        NSMutableDictionary *resultsToReturn;
+        NSDictionary *currentDictionary =
+        resultsToReturn = [[NSMutableDictionary alloc] initWithDictionary:JSON];
+        
+        if ([owner respondsToSelector:@selector(requestCompletedWithStatus:andResults:requestType:)]) {
+            resultsToReturn = [[NSMutableDictionary alloc] initWithDictionary:JSON];
+            
+            if (![resultsToReturn isEqual:[NSNull null]]) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [owner requestCompletedWithStatus:StatusOK andResults:resultsToReturn requestType:requestType];
+                });
+            }
+            else {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [owner requestCompletedWithStatus:StatusUnknownError andResults:nil requestType:requestType];
+                });
+            }
+        }
+        
+    });
+    
+    
+}
+
 -(void)processError:(NSError *)error andResponse:(id)JSON forOwner:(id)owner requestType:(NSString *)requestType {
     
     NSMutableDictionary *resultsToReturn;
@@ -191,4 +218,46 @@ __strong static NSMutableDictionary *connectionTable = nil;
     [[ZodioAPIClient sharedClient] enqueueHTTPRequestOperation:loginRequestOperation forOwner:owner];
     
 }
+
+- (void)getActivityFeedforOwner:(id<ZodioAPIClientDelegate>)owner {
+    
+    NSString *requestPath = kAPIBasePath;
+    requestPath = [requestPath stringByAppendingString:[NSString stringWithFormat:@"%@",kGetActivityFeed]];
+    
+//    NSMutableDictionary *loginParameter = [[NSMutableDictionary alloc] init];
+//    [loginParameter setObject:@"saakyz@gmail.com" forKey:@"access_token"];
+//    [loginParameter setObject:string forKey:@"where_text"];
+//    [loginParameter setObject:location forKey:@"location"];
+    
+    
+    NSMutableURLRequest *photosRequest = [[ZodioAPIClient sharedClient] requestWithMethod:@"GET" path:requestPath parameters:nil];
+    
+    AFJSONRequestOperation *loginRequestOperation = [AFJSONRequestOperation JSONRequestOperationWithRequest:photosRequest success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON)
+                                                     {
+                                                         if (![JSON isEqual:[NSNull null]]) {
+                                                             dispatch_async(dispatch_get_main_queue(), ^{
+                                                                 [owner requestCompletedWithStatus:StatusOK andResults:JSON requestType:kAPIClientRequestTypeGetActivityFeed];
+                                                             });
+                                                         }
+                                                         else {
+                                                             dispatch_async(dispatch_get_main_queue(), ^{
+                                                                 [owner requestCompletedWithStatus:StatusUnknownError andResults:nil requestType:kAPIClientRequestTypeGetActivityFeed];
+                                                             });
+                                                         }
+//                                                         [self processListData:JSON withFields:nil forOwner:owner requestType:kAPIClientRequestTypeGetActivityFeed];
+                                                     }
+                                                                                                    failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON)
+                                                     {
+                                                         if ([owner respondsToSelector:@selector(requestCompletedWithStatus:andResults:requestType:)]) {
+                                                             [owner requestCompletedWithStatus:StatusUnknownError andResults:JSON requestType:kAPIClientRequestTypeGetActivityFeed];
+                                                         }
+//                                                         [self processError:error andResponse:JSON forOwner:owner requestType:kAPIClientRequestTypeGetActivityFeed];
+                                                         
+                                                     }];
+    
+    
+    [[ZodioAPIClient sharedClient] enqueueHTTPRequestOperation:loginRequestOperation forOwner:owner];
+    
+}
+
 @end

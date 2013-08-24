@@ -15,7 +15,12 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
-        self.imageViewIcon = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 90, 90)];
+        self.imageViewIcon = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 50, 50)];
+//        self.imageViewIcon.image = [UIImage imageWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"UserPlaceholder" ofType:@"png"]]];
+//        self.imageViewIcon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"UserPlaceholder"]];
+//        [self.imageViewIcon setFrame:CGRectMake(5, 5, 50, 50)];
+        self.imageViewIcon.backgroundColor = [UIColor grayColor];
+//        self.imageViewIcon.image = [UIImage imageNamed:@"UserPlaceholder"];
         self.messageLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 10, 200, 90)];
         self.messageLabel.font = [UIFont boldSystemFontOfSize:12];
         self.messageLabel.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1.0];

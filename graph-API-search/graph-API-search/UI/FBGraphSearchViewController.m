@@ -37,6 +37,7 @@
     self.tableView.accessibilityIdentifier = @"Item listing";
 	// Do any additional setup after loading the view.
     [self setupNextButtonWithImageName:@"plusIcon.png" andHilightedImageName:@"plusIcon-hl.png" withImageWidth:36 andImageHeight:32];
+    [self reload];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,6 +61,7 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return [[UIView alloc] initWithFrame:CGRectZero];
     UIView *headerSearchView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
     
     
@@ -96,7 +98,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     
-    return 50;
+    return 0;
 }
 
 #pragma mark APIClient
@@ -104,9 +106,9 @@
 - (void)requestCompletedWithStatus:(NSInteger)status andResults:(NSMutableDictionary *)results requestType:(NSString *)requestType {
     [SVProgressHUD dismiss];
     if (status == StatusOK) {
-        if ([requestType isEqualToString:kZodioAPIClientRequestTypeGetFacebookGraphSearch]) {
+        if ([requestType isEqualToString:kAPIClientRequestTypeGetActivityFeed]) {
 
-            [self.dataSource processJSONArray:[results objectForKey:@"data"]];
+            [self.dataSource processJSONArray:results];
             [self.tableView reloadData];
             
         }
@@ -161,4 +163,9 @@
     
 //    [self presentViewController:addItemViewController animated:YES completion:nil];
 }
+
+- (void)reload {
+    [[ZodioAPIClient sharedClient] getActivityFeedforOwner:(id<ZodioAPIClientDelegate>)self];
+}
+
 @end

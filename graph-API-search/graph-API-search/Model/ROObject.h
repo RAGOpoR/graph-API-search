@@ -13,12 +13,16 @@
     NSURL *_iconURL;
     NSString *_message;
     NSString *_story;
+    NSString *_objectName;
+    NSString *_createDate;
 }
 
 @property (nonatomic, copy) NSString *objectID;
 @property (nonatomic, strong) NSURL *iconURL;
 @property (nonatomic, copy) NSString *message;
 @property (nonatomic, copy) NSString *story;
+@property (nonatomic, copy) NSString *objectName;
+@property (nonatomic, copy) NSString *createDate;
 
 - (id)initWithJsonData:(NSDictionary *)jsonData;
 

@@ -16,6 +16,8 @@
     [aCoder encodeObject:self.iconURL forKey:@"iconURL"];
     [aCoder encodeObject:self.message forKey:@"message"];
     [aCoder encodeObject:self.story forKey:@"story"];
+    [aCoder encodeObject:self.objectName forKey:@"objectName"];
+    [aCoder encodeObject:self.createDate forKey:@"createDate"];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
@@ -25,6 +27,8 @@
         self.iconURL = [aDecoder decodeObjectForKey:@"iconURL"];
         self.message = [aDecoder decodeObjectForKey:@"message"];
         self.story = [aDecoder decodeObjectForKey:@"story"];
+        self.objectName = [aDecoder decodeObjectForKey:@"objectName"];
+        self.createDate = [aDecoder decodeObjectForKey:@"createDate"];
     }
     
     return self;
@@ -36,17 +40,25 @@
         {
             self.objectID = [jsonData valueForKey:@"id"];
         }
-        if ([[jsonData stringForKey:@"icon"] length] > 0)
+        if ([[NSString stringWithFormat:@"%@",[jsonData valueForKeyPath:@"user.avatar_url"]] length] > 1)
         {
-            self.iconURL = [NSURL URLWithString:[jsonData valueForKey:@"icon"]];
+            self.iconURL = [NSURL URLWithString:[jsonData valueForKeyPath:@"user.avatar_url"]];
         }
-        if ([[jsonData stringForKey:@"message"] length] > 0)
+        if ([[jsonData stringForKey:@"where_text"] length] > 0)
         {
-            self.message = [jsonData valueForKey:@"message"];
+            self.message = [jsonData valueForKey:@"where_text"];
         }
-        if ([[jsonData stringForKey:@"story"] length] > 0)
+        if ([[jsonData stringForKey:@"status"] length] > 0)
         {
-            self.story = [jsonData valueForKey:@"story"];
+            self.story = [jsonData valueForKey:@"status"];
+        }
+        if ([[jsonData valueForKeyPath:@"user.username"] length] > 0)
+        {
+            self.objectName = [jsonData valueForKeyPath:@"user.username"];
+        }
+        if ([[jsonData valueForKey:@"created_at"] length] > 0)
+        {
+            self.createDate = [jsonData valueForKey:@"created_at"];
         }
     }
     
