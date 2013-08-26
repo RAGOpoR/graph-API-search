@@ -175,6 +175,17 @@
     [self.navigationItem setRightBarButtonItem:navNextButton];
 }
 
+- (void) setupBackButtonWithImageName:(NSString*)defaultImageName andHilightedImageName:(NSString*)hilightedImageName withImageWidth:(float)width andImageHeight:(float)height {
+    UIButton *buttonNext = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, 0.0f, width, height)];
+    [buttonNext setImage:[UIImage imageNamed:defaultImageName] forState:UIControlStateNormal];
+    [buttonNext setImage:[UIImage imageNamed:hilightedImageName] forState:UIControlStateHighlighted];
+    [buttonNext addTarget:self action:@selector(backButtonPress) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    UIBarButtonItem *navNextButton = [[UIBarButtonItem alloc] initWithCustomView: buttonNext];
+    [self.navigationItem setLeftBarButtonItem:navNextButton];
+}
+
 - (void)setupLeftCancelButtonItem
 {
     if (self.navigationController) {

@@ -40,6 +40,10 @@
     [self reload];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self reload];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

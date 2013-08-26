@@ -66,7 +66,16 @@ static NSString *facebookCellIdentifier = @"fbsearchcell";
         facebookCellToReturn = [topLevelObjects objectAtIndex:0];
     }
     ROObject *currentObject = [self.objectArray objectAtIndex:indexPath.row];
-    
+    facebookCellToReturn.name.text = currentObject.objectName;
+    facebookCellToReturn.createTime.text = currentObject.createDate;
+    facebookCellToReturn.messageLabel.text = currentObject.message;
+    if ( [[NSString stringWithFormat:@"%@",currentObject.story] isEqualToString:@"1"]) {
+        [facebookCellToReturn.imageStatus setImage:[UIImage imageNamed:@"truemark"]];
+        
+    }
+    else {
+        [facebookCellToReturn.imageStatus setImage:[UIImage imageNamed:@"falsemark"]];
+    }
 //    facebookCellToReturn = [FacebookResultCellFactory createfacebookCellWithCell:facebookCellToReturn feedItem:currentObject];
     facebookCellToReturn.tag = indexPath.section;
     

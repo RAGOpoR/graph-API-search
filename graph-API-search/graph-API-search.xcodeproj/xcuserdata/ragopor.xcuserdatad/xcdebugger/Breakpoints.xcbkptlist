@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "graph-API-search/UI/FBGraphSearchViewController.m"
-         timestampString = "398993987.613557"
+         timestampString = "399005655.286932"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "58"
-         endingLineNumber = "58"
+         startingLineNumber = "62"
+         endingLineNumber = "62"
          landmarkName = "-tableView:didSelectRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -79,19 +79,6 @@
          startingLineNumber = "38"
          endingLineNumber = "38"
          landmarkName = "-initWithJsonData:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "graph-API-search/ViewController.m"
-         timestampString = "389823226.552936"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "20"
-         endingLineNumber = "20"
-         landmarkName = "-initWithNibName:bundle:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -112,11 +99,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "graph-API-search/UI/FBGraphSearchViewController.m"
-         timestampString = "398993987.613557"
+         timestampString = "399005655.286932"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "59"
-         endingLineNumber = "59"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
          landmarkName = "-tableView:didSelectRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -255,11 +242,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "graph-API-search/component/Add Item/ZAddPlaceLocationSelector.m"
-         timestampString = "398991187.083729"
+         timestampString = "399008819.680983"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "190"
-         endingLineNumber = "190"
+         startingLineNumber = "191"
+         endingLineNumber = "191"
          landmarkName = "-nextButtonPress"
          landmarkType = "5">
       </FileBreakpoint>
@@ -268,11 +255,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "graph-API-search/component/Add Item/ZAddPlaceLocationSelector.m"
-         timestampString = "398991656.245685"
+         timestampString = "399008864.439593"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "197"
-         endingLineNumber = "197"
+         startingLineNumber = "202"
+         endingLineNumber = "202"
          landmarkName = "-requestCompletedWithStatus:andResults:requestType:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -281,11 +268,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "graph-API-search/component/Add Item/ZAddPlaceLocationSelector.m"
-         timestampString = "398992022.882114"
+         timestampString = "399008864.439593"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "214"
-         endingLineNumber = "214"
+         startingLineNumber = "219"
+         endingLineNumber = "219"
          landmarkName = "-requestType:failedWithError:andData:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -320,11 +307,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "graph-API-search/UI/FBGraphSearchViewController.m"
-         timestampString = "399000372.559978"
+         timestampString = "399005655.286932"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "109"
-         endingLineNumber = "109"
+         startingLineNumber = "113"
+         endingLineNumber = "113"
          landmarkName = "-requestCompletedWithStatus:andResults:requestType:"
          landmarkType = "5">
       </FileBreakpoint>

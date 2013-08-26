@@ -109,6 +109,7 @@
     [self.locationSelectorMapView addGestureRecognizer:self.mapPanRecognizer];
     
     [self setupNextButtonWithImageName:@"plusIcon.png" andHilightedImageName:@"plusIcon-hl.png" withImageWidth:36 andImageHeight:32];
+    [self setupBackButtonWithImageName:@"reject" andHilightedImageName:nil withImageWidth:36 andImageHeight:32];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:@"UITextFieldTextDidChangeNotification" object:nil];
     
@@ -188,6 +189,10 @@
     NSString *latAndLongAsString = [NSString stringWithFormat:@"%f,%f",self.selectedLocation.latitude,self.selectedLocation.longitude];
     [SVProgressHUD showWithStatus:@"Posting..."];
     [[ZodioAPIClient sharedClient] createTicketWithString:_textInput.text andLocation:latAndLongAsString forOwner:(id<ZodioAPIClientDelegate>)self];
+}
+
+- (void)backButtonPress {
+    
 }
 
 #pragma mark APIClient

@@ -9,14 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @class ROObject;
-@interface ViewController : UIViewController {
+@interface ViewController : ZViewController {
     ROObject *_currentObject;
     UIImageView *_imageViewIcon;
     UILabel *_messageLabel;
+    UILabel *_name;
+    UILabel *_createTime;
 }
 
-@property (nonatomic, strong) UIImageView *imageViewIcon;
-@property (nonatomic, strong) UILabel *messageLabel;
+@property (nonatomic, strong) IBOutlet UIImageView *imageViewIcon;
+@property (nonatomic, strong) IBOutlet UILabel *messageLabel;
 @property (nonatomic, strong) ROObject *currentObject;
-
+@property (nonatomic, strong) IBOutlet UILabel *name;
+@property (nonatomic, strong) IBOutlet UILabel *createTime;
 @end
