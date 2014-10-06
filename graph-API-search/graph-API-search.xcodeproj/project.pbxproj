@@ -24,7 +24,6 @@
 		A64E53E5173BFE210089FC37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A64E53E3173BFE210089FC37 /* InfoPlist.strings */; };
 		A64E53E8173BFE210089FC37 /* graph_API_searchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A64E53E7173BFE210089FC37 /* graph_API_searchTests.m */; };
 		A64E53F4173C02340089FC37 /* ROTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A64E53F3173C02340089FC37 /* ROTableViewController.m */; };
-		A64E53F5173C02340089FC37 /* ROTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A64E53F3173C02340089FC37 /* ROTableViewController.m */; };
 		A64E53F8173C030B0089FC37 /* ROTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A64E53F7173C030B0089FC37 /* ROTableViewDataSource.m */; };
 		A64E53F9173C030B0089FC37 /* ROTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A64E53F7173C030B0089FC37 /* ROTableViewDataSource.m */; };
 		A64E53FE173C043D0089FC37 /* ROObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A64E53FD173C043D0089FC37 /* ROObject.m */; };
@@ -81,7 +80,6 @@
 		A64E549A173C45EB0089FC37 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A64E5493173C45EB0089FC37 /* SVProgressHUD.bundle */; };
 		A64E549B173C45EB0089FC37 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A64E5493173C45EB0089FC37 /* SVProgressHUD.bundle */; };
 		A64E549C173C45EB0089FC37 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A64E5495173C45EB0089FC37 /* SVProgressHUD.m */; };
-		A64E549D173C45EB0089FC37 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A64E5495173C45EB0089FC37 /* SVProgressHUD.m */; };
 		A64E549F173C47850089FC37 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64E549E173C47840089FC37 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -463,7 +461,7 @@
 			name = "graph-API-searchTests";
 			productName = "graph-API-searchTests";
 			productReference = A64E53D9173BFE210089FC37 /* graph-API-searchTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -582,7 +580,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A64E53E8173BFE210089FC37 /* graph_API_searchTests.m in Sources */,
-				A64E53F5173C02340089FC37 /* ROTableViewController.m in Sources */,
 				A64E53F9173C030B0089FC37 /* ROTableViewDataSource.m in Sources */,
 				A64E53FF173C043D0089FC37 /* ROObject.m in Sources */,
 				A64E541A173C08720089FC37 /* AFHTTPClient.m in Sources */,
@@ -602,7 +599,6 @@
 				A64E5449173C20CF0089FC37 /* FacebookResultCellFactory.m in Sources */,
 				A64E544D173C27C50089FC37 /* ROObjectFactory.m in Sources */,
 				A64E5452173C2A3A0089FC37 /* NSDictionary+Safety.m in Sources */,
-				A64E549D173C45EB0089FC37 /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +706,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "graph-API-search/graph-API-search-Prefix.pch";
 				INFOPLIST_FILE = "graph-API-search/graph-API-search-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -726,6 +724,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "graph-API-search/graph-API-search-Prefix.pch";
 				INFOPLIST_FILE = "graph-API-search/graph-API-search-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -787,6 +786,7 @@
 				A64E53ED173BFE210089FC37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A64E53EE173BFE210089FC37 /* Build configuration list for PBXNativeTarget "graph-API-searchTests" */ = {
 			isa = XCConfigurationList;
@@ -795,6 +795,7 @@
 				A64E53F0173BFE210089FC37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
