@@ -56,7 +56,7 @@
     
     ROObject *roObject = [ROObject new];
     roObject.iconURL = [NSURL URLWithString:@"http://message"];
-    XCTAssertEqual(roObject.iconURL.absoluteString, @"http://messagee", @"iconURL should equal");
+    XCTAssertEqual(roObject.iconURL.absoluteString, @"http://message", @"iconURL should equal");
 }
 
 @end
