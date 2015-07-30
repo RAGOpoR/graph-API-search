@@ -109,7 +109,7 @@
 		A64E53CE173BFE210089FC37 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A64E53CF173BFE210089FC37 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A64E53D2173BFE210089FC37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		A64E53D9173BFE210089FC37 /* graph-API-searchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "graph-API-searchTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64E53D9173BFE210089FC37 /* graph-API-searchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "graph-API-searchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64E53E2173BFE210089FC37 /* graph-API-searchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "graph-API-searchTests-Info.plist"; sourceTree = "<group>"; };
 		A64E53E4173BFE210089FC37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A64E53E6173BFE210089FC37 /* graph_API_searchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graph_API_searchTests.h; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				A64E53B3173BFE210089FC37 /* graph-API-search.app */,
-				A64E53D9173BFE210089FC37 /* graph-API-searchTests.octest */,
+				A64E53D9173BFE210089FC37 /* graph-API-searchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -456,7 +456,7 @@
 			);
 			name = "graph-API-searchTests";
 			productName = "graph-API-searchTests";
-			productReference = A64E53D9173BFE210089FC37 /* graph-API-searchTests.octest */;
+			productReference = A64E53D9173BFE210089FC37 /* graph-API-searchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
