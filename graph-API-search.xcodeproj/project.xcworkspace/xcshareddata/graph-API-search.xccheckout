@@ -7,18 +7,18 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F8866D60-349B-4CF4-B03B-BAB23313737F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>graph-API-search</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>783FDAACA654192644948278D37975A36D78E3D2</key>
 		<string>https://github.com/RAGOpoR/graph-API-search.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>graph-API-search/graph-API-search.xcodeproj</string>
+	<string>graph-API-search.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>783FDAACA654192644948278D37975A36D78E3D2</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/RAGOpoR/graph-API-search.git</string>
