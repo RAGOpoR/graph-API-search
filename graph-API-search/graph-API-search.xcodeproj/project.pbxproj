@@ -18,7 +18,6 @@
 		A64E53CD173BFE210089FC37 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A64E53CC173BFE210089FC37 /* Default-568h@2x.png */; };
 		A64E53D0173BFE210089FC37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A64E53CF173BFE210089FC37 /* ViewController.m */; };
 		A64E53D3173BFE210089FC37 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E53D1173BFE210089FC37 /* ViewController.xib */; };
-		A64E53DB173BFE210089FC37 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64E53DA173BFE210089FC37 /* SenTestingKit.framework */; };
 		A64E53DC173BFE210089FC37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64E53B6173BFE210089FC37 /* UIKit.framework */; };
 		A64E53DD173BFE210089FC37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64E53B8173BFE210089FC37 /* Foundation.framework */; };
 		A64E53E5173BFE210089FC37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A64E53E3173BFE210089FC37 /* InfoPlist.strings */; };
@@ -111,7 +110,6 @@
 		A64E53CF173BFE210089FC37 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A64E53D2173BFE210089FC37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		A64E53D9173BFE210089FC37 /* graph-API-searchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "graph-API-searchTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A64E53DA173BFE210089FC37 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A64E53E2173BFE210089FC37 /* graph-API-searchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "graph-API-searchTests-Info.plist"; sourceTree = "<group>"; };
 		A64E53E4173BFE210089FC37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A64E53E6173BFE210089FC37 /* graph_API_searchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graph_API_searchTests.h; sourceTree = "<group>"; };
@@ -189,7 +187,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A64E53DB173BFE210089FC37 /* SenTestingKit.framework in Frameworks */,
 				A64E53DC173BFE210089FC37 /* UIKit.framework in Frameworks */,
 				A64E53DD173BFE210089FC37 /* Foundation.framework in Frameworks */,
 				A64E5486173C32070089FC37 /* SDWebImage.framework in Frameworks */,
@@ -227,7 +224,6 @@
 				A64E53B6173BFE210089FC37 /* UIKit.framework */,
 				A64E53B8173BFE210089FC37 /* Foundation.framework */,
 				A64E53BA173BFE210089FC37 /* CoreGraphics.framework */,
-				A64E53DA173BFE210089FC37 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -461,7 +457,7 @@
 			name = "graph-API-searchTests";
 			productName = "graph-API-searchTests";
 			productReference = A64E53D9173BFE210089FC37 /* graph-API-searchTests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -469,6 +465,7 @@
 		A64E53AB173BFE210089FC37 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0640;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Siam Wannakosit";
 			};
@@ -739,13 +736,13 @@
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"\"$(SRCROOT)\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "graph-API-search/graph-API-search-Prefix.pch";
 				INFOPLIST_FILE = "graph-API-searchTests/graph-API-searchTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -757,13 +754,13 @@
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"\"$(SRCROOT)\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "graph-API-search/graph-API-search-Prefix.pch";
 				INFOPLIST_FILE = "graph-API-searchTests/graph-API-searchTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
