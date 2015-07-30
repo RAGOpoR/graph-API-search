@@ -23,7 +23,7 @@ test:
         PROVISIONING_PROFILE=
         -sdk iphonesimulator
         -destination 'platform=iOS Simulator,OS=8.4,name=iPhone 6'
-        -workspace graph-API-search.xcworkspace
+        -project graph-API-search.xcodeproj
         -scheme "graph-API-search"
         clean build test |
       tee $CIRCLE_ARTIFACTS/xcode_raw.log |
