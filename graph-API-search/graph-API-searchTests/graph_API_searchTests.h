@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Siam Wannakosit. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface graph_API_searchTests : SenTestCase
+@interface graph_API_searchTests : XCTestCase
 
 @end
