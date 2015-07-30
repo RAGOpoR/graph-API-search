@@ -7,6 +7,7 @@
 //
 
 #import "graph_API_searchTests.h"
+#import "ROObject.h"
 
 @implementation graph_API_searchTests
 
@@ -24,9 +25,10 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testROObject
 {
-    XCTFail(@"Unit tests are not implemented yet in graph-API-searchTests");
+    ROObject *roObject = [ROObject new];
+    XCTAssertNotNil(roObject ,@"roObject should not be nil");
 }
 
 @end
