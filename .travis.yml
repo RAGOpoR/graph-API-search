@@ -13,6 +13,25 @@
   # - xctool -workspace dtac-iservice.xcworkspace -scheme dtac-iservice -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
   # - xctool test -workspace dtac-iservice.xcworkspace -scheme dtac-iservice -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
   # - xcodebuild -workspace graph-API-search.xcworkspace -scheme graph-API-search -destination 'platform=iOS Simulator,name=iPhone 6s,OS=latest' build test
+# language: objective-c
+# script:
+#   - xcodebuild -workspace graph-API-search.xcworkspace -scheme graph-API-search -sdk iphonesimulator
 language: objective-c
+env:
+    global:
+        - APP_NAME="graph-API-search"
+        - XCODE_SCHEME="$APP_NAME"
+        - UNIT_TEST_SCHEME="${XCODE_SCHEME}Tests"
+        - PROJECT_DIRECTORY="$PWD/"
+before_install:
+    - sudo gem install cocoapods
+    - brew update
+    - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
+before_script:
+
 script:
-  - xcodebuild -workspace graph-API-search.xcworkspace -scheme graph-API-search -sdk iphonesimulator
+    - xctool -workspace $PROJECT_DIRECTORY$APP_NAME.xcworkspace -scheme $XCODE_SCHEME -sdk iphonesimulator
+    - xctool test -workspace $PROJECT_DIRECTORY$APP_NAME.xcworkspace -scheme $UNIT_TEST_SCHEME -sdk iphonesimulator
+after_success:
+
+after_script:
