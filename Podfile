@@ -36,7 +36,7 @@ xcodeproj 'graph-API-search.xcodeproj'
 #use_frameworks!
 def shared_pods
     # pod 'AFNetworking', '~>3.0'
-     pod 'Parse'
+#     pod 'Parse'
 
 end
 target 'graph-API-search' do

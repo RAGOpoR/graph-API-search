@@ -1,5 +1,4 @@
 PODS:
-  - Bolts/Tasks (1.7.0)
   - OHHTTPStubs (5.0.0):
     - OHHTTPStubs/Default (= 5.0.0)
   - OHHTTPStubs/Core (5.0.0)
@@ -13,19 +12,14 @@ PODS:
   - OHHTTPStubs/NSURLSession (5.0.0):
     - OHHTTPStubs/Core
   - OHHTTPStubs/OHPathHelpers (5.0.0)
-  - Parse (1.13.0):
-    - Bolts/Tasks (~> 1.6)
   - WSCoachMarksView (HEAD based on 0.2)
 
 DEPENDENCIES:
   - OHHTTPStubs
-  - Parse
   - WSCoachMarksView (HEAD)
 
 SPEC CHECKSUMS:
-  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
   OHHTTPStubs: a5d2e9eea07869d42ec03338325f398bc520e159
-  Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
   WSCoachMarksView: d1653c058c8289a300ddf28af9dd49eb659c9c42
 
 COCOAPODS: 0.39.0
