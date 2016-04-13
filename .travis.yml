@@ -32,8 +32,8 @@ before_install:
 before_script:
 
 script:
-    - xctool -workspace $PROJECT_DIRECTORY$APP_NAME.xcworkspace -scheme $XCODE_SCHEME -sdk iphonesimulator
-    - xctool test -workspace $PROJECT_DIRECTORY$APP_NAME.xcworkspace -scheme $XCODE_SCHEME -sdk iphonesimulator
+    script:
+ - xcodebuild test -workspace graph-API-search.xcworkspace -scheme graph-API-search -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" CONFIGURATION_BUILD_DIR=$PWD/build-test
 after_success:
 
 after_script:
