@@ -24,7 +24,9 @@ env:
         - UNIT_TEST_SCHEME="${XCODE_SCHEME}Tests"
         - PROJECT_DIRECTORY="$PWD/"
 before_install:
-    - sudo gem install cocoapods
+    - rvm use system
+    - sudo gem install cocoapods -v '0.39.0'
+    # - sudo gem install cocoapods
     - brew update
     - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 before_script:
