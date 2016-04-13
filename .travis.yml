@@ -33,7 +33,7 @@ before_script:
 
 script:
     - xctool -workspace $PROJECT_DIRECTORY$APP_NAME.xcworkspace -scheme $XCODE_SCHEME -sdk iphonesimulator
-    - xctool test -workspace $PROJECT_DIRECTORY$APP_NAME.xcworkspace -scheme $UNIT_TEST_SCHEME -sdk iphonesimulator
+    - xctool test -workspace $PROJECT_DIRECTORY$APP_NAME.xcworkspace -scheme $XCODE_SCHEME -sdk iphonesimulator
 after_success:
 
 after_script:
