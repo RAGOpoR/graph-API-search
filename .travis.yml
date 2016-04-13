@@ -32,7 +32,6 @@ before_install:
 before_script:
 
 script:
-    script:
  - xcodebuild test -workspace graph-API-search.xcworkspace -scheme graph-API-search -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" CONFIGURATION_BUILD_DIR=$PWD/build-test
 after_success:
 
