@@ -12,4 +12,4 @@ env:
 script:
   # - xctool -workspace dtac-iservice.xcworkspace -scheme dtac-iservice -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
   # - xctool test -workspace dtac-iservice.xcworkspace -scheme dtac-iservice -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xcodebuild -workspace graph-API-search.xcworkspace -scheme graph-API-search -destination 'platform=iOS Simulator,name=iPhone 6s,OS=latest' clean build test
+  - xcodebuild -workspace graph-API-search.xcworkspace -scheme graph-API-search -destination 'platform=iOS Simulator,name=iPhone 6s,OS=latest' build test
