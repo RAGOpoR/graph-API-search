@@ -36,7 +36,7 @@ xcodeproj 'graph-API-search.xcodeproj'
 #use_frameworks!
 def shared_pods
     # pod 'AFNetworking', '~>3.0'
-    # pod 'Parse'
+     pod 'Parse'
 
 end
 target 'graph-API-search' do
@@ -50,7 +50,7 @@ target 'graph-API-search' do
     # pod 'SVPullToRefresh'
     #pod 'TBQuadTree'
     # pod 'HMSegmentedControl'
-    pod 'PureLayout'
+#    pod 'PureLayout'
     # pod 'iCarousel'
     # pod 'FXBlurView'
 #    pod 'iOSaffiliate', :git => 'https://github.com/dtacmobile/iOSaffiliate.git', :branch => 'develop'
@@ -89,7 +89,7 @@ end
 # end
 target 'graph-API-searchTests' do
     platform :ios, '7.0'
-    shared_pods
+#    shared_pods
     pod 'OHHTTPStubs'
 end
 
