@@ -1,0 +1,28 @@
+PODS:
+  - OHHTTPStubs (5.0.0):
+    - OHHTTPStubs/Default (= 5.0.0)
+  - OHHTTPStubs/Core (5.0.0)
+  - OHHTTPStubs/Default (5.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (5.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (5.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (5.0.0)
+  - PureLayout (3.0.1)
+  - WSCoachMarksView (HEAD based on 0.2)
+
+DEPENDENCIES:
+  - OHHTTPStubs
+  - PureLayout
+  - WSCoachMarksView (HEAD)
+
+SPEC CHECKSUMS:
+  OHHTTPStubs: a5d2e9eea07869d42ec03338325f398bc520e159
+  PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
+  WSCoachMarksView: d1653c058c8289a300ddf28af9dd49eb659c9c42
+
+COCOAPODS: 0.39.0
