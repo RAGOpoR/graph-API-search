@@ -15,4 +15,4 @@
   # - xcodebuild -workspace graph-API-search.xcworkspace -scheme graph-API-search -destination 'platform=iOS Simulator,name=iPhone 6s,OS=latest' build test
 language: objective-c
 script:
-  - xcodebuild -project graph-API-search.xcodeproj -scheme graph-API-search -sdk iphonesimulator
+  - xcodebuild -workspace graph-API-search.xcworkspace -scheme graph-API-search -sdk iphonesimulator
