@@ -825,7 +825,7 @@
 				GCC_PREFIX_HEADER = "graph-API-search/graph-API-search-Prefix.pch";
 				INFOPLIST_FILE = "graph-API-search/graph-API-search-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -844,7 +844,7 @@
 				GCC_PREFIX_HEADER = "graph-API-search/graph-API-search-Prefix.pch";
 				INFOPLIST_FILE = "graph-API-search/graph-API-search-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
