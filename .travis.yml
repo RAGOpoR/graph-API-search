@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode7.3
+osx_image: xcode7.2
 # env:
 #   global:
 #   - LC_CTYPE=en_US.UTF-8
@@ -32,7 +32,9 @@ xcode_sdk: iphonesimulator9.3
     # - brew update
     # - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 # before_script:
-
+before_install:
+    - brew update
+    - brew install xctool
 script:
  # - xcodebuild test -workspace graph-API-search.xcworkspace -scheme graph-API-search -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" CONFIGURATION_BUILD_DIR=$PWD/build-test
  - xctool -workspace graph-API-search.xcworkspace -scheme graph-API-search -configuration Debug ONLY_ACTIVE_ARCH=NO -sdk iphonesimulator9.3 -destination "platform=iOS Simulator,name=iPhone 5,OS=9.3" -reporter junit:test-results/xc-result.xml test -freshSimulator
