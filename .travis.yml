@@ -36,7 +36,7 @@ before_install:
 # before_install:
 #     - brew update
 #     - brew install xctool
-script: xcodebuild -workspace graph-API-search.xcworkspace -scheme graph-API-search -destination 'platform=iOS Simulator,name=iPhone 6s,OS=iPhone 6 Plus' build test
+script: xcodebuild -workspace graph-API-search.xcworkspace -scheme graph-API-search -destination 'platform=iOS Simulator,name=iPhone 6s,OS=latest' build test
 
 # script:
  # - xcodebuild test -workspace graph-API-search.xcworkspace -scheme graph-API-search -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" CONFIGURATION_BUILD_DIR=$PWD/build-test
