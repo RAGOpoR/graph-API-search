@@ -35,7 +35,7 @@ xcode_sdk: iphonesimulator9.3
 
 script:
  # - xcodebuild test -workspace graph-API-search.xcworkspace -scheme graph-API-search -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" CONFIGURATION_BUILD_DIR=$PWD/build-test
- - xctool -workspace graph-API-search.xcworkspace -scheme graph-API-search -configuration Debug ONLY_ACTIVE_ARCH=NO -sdk iphonesimulator8.1 -destination "platform=iOS Simulator,name=iPhone 5,OS=8.1" -reporter junit:test-results/xc-result.xml test -freshSimulator
+ - xctool -workspace graph-API-search.xcworkspace -scheme graph-API-search -configuration Debug ONLY_ACTIVE_ARCH=NO -sdk iphonesimulator9.3 -destination "platform=iOS Simulator,name=iPhone 5,OS=9.3" -reporter junit:test-results/xc-result.xml test -freshSimulator
 # after_success:
 
 # after_script:
