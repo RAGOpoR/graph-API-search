@@ -33,9 +33,9 @@ language: objective-c
     # - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 # before_script:
 
-before_install:
-    - brew update
-    - brew install xctool
+# before_install:
+#     - brew update
+#     - brew install xctool
 script: xctool -workspace graph-API-search.xcworkspace -scheme graph-API-search test
 
 # script:
