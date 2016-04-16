@@ -4,9 +4,9 @@ osx_image: xcode7.3
 #   global:
 #   - LC_CTYPE=en_US.UTF-8
 #   - LANG=en_US.UTF-8
-# xcode_workspace: graph-API-search.xcworkspace
-# xcode_scheme: graph-API-search
-# xcode_sdk: iphonesimulator9.3
+xcode_workspace: graph-API-search.xcworkspace
+xcode_scheme: graph-API-search
+xcode_sdk: iphonesimulator9.3
 #script: xcodebuild GCC_GENERATE_TEST_COVERAGE_FILES=YES -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s,OS=latest' -workspace dtac-iservice.xcworkspace -scheme "dtac-iservice" clean build test
 #language: objective-c
 # script:
@@ -25,17 +25,17 @@ osx_image: xcode7.3
 #         - XCODE_SCHEME="$APP_NAME"
 #         - UNIT_TEST_SCHEME="${XCODE_SCHEME}Tests"
 #         - PROJECT_DIRECTORY="$PWD/"
-before_install:
+# before_install:
     # - rvm use system
     # - sudo gem install cocoapods -v '0.39.0'
     # - sudo gem install cocoapods
     # - brew update
     # - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
-before_script:
+# before_script:
 
-script:
+# script:
  # - xcodebuild test -workspace graph-API-search.xcworkspace -scheme graph-API-search -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" CONFIGURATION_BUILD_DIR=$PWD/build-test
- - xctool -workspace graph-API-search.xcworkspace -scheme graph-API-search -configuration Debug ONLY_ACTIVE_ARCH=NO -sdk iphonesimulator8.1 -destination "platform=iOS Simulator,name=iPhone 5,OS=8.1" -reporter junit:test-results/xc-result.xml test -freshSimulator
-after_success:
+ # - xctool -workspace graph-API-search.xcworkspace -scheme graph-API-search -configuration Debug ONLY_ACTIVE_ARCH=NO -sdk iphonesimulator8.1 -destination "platform=iOS Simulator,name=iPhone 5,OS=8.1" -reporter junit:test-results/xc-result.xml test -freshSimulator
+# after_success:
 
-after_script:
+# after_script:
