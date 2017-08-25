@@ -9,10 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface ROObject : NSObject <NSCoding> {
-    NSString *_objectID;
-    NSURL *_iconURL;
-    NSString *_message;
-    NSString *_story;
+
 }
 
 @property (nonatomic, copy) NSString *objectID;
